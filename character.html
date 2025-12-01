@@ -6,8 +6,17 @@
   <title>Wiki Hey Hey - Personaje</title>
   <link rel="stylesheet" href="css/global.css" />
   <link rel="stylesheet" href="css/character.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Audiowide&display=swap" rel="stylesheet" />
+  
 </head>
 <body>
+  <!-- Efectos de luz animados -->
+  <div class="light-orb-1"></div>
+  <div class="light-orb-2"></div>
+
+  <!-- Contenedor para partículas de fondo -->
+  <div id="particles-js"></div>
+
   <header class="header-character">
     <div class="container-character-header">
       <div class="logo-section">
@@ -22,7 +31,6 @@
 
   <main class="main-character">
     <div class="container-character">
-      <!-- Columna izquierda: perfil del personaje -->
       <aside class="character-profile">
         <div class="profile-image-container">
           <img id="char-profile-image" class="profile-image" alt="Personaje" />
@@ -52,9 +60,7 @@
         </div>
       </aside>
 
-      <!-- Columna derecha: contenido dinámico -->
       <section class="character-content">
-        <!-- Menú de navegación por tabs -->
         <nav class="tabs-menu">
           <button class="tab-btn active" data-tab="estadisticas">ESTADÍSTICAS</button>
           <button class="tab-btn" data-tab="habilidades">HABILIDADES</button>
@@ -64,48 +70,87 @@
           <button class="tab-btn" data-tab="potenciales">POTENCIALES</button>
         </nav>
 
-        <!-- Contenido de cada tab -->
-        <div class="tab-content-container">
-          <!-- Tab: Estadísticas -->
-          <div class="tab-content active" id="tab-estadisticas">
-            <h3>Estadísticas Base</h3>
-            <canvas id="baseStatsChart"></canvas>
-            <div id="char-stats-text" class="stats-list"></div>
-          </div>
-
-          <!-- Tab: Habilidades -->
-          <div class="tab-content" id="tab-habilidades">
-            <h3>Habilidades</h3>
-            <div id="abilities-container"></div>
-          </div>
-
-          <!-- Tab: Resonancias -->
-          <div class="tab-content" id="tab-resonancias">
-            <h3>Resonancias de Habilidad</h3>
-            <div id="resonances-container"></div>
-          </div>
-
-          <!-- Tab: Recuerdos -->
-          <div class="tab-content" id="tab-recuerdos">
-            <h3>Recuerdo</h3>
-            <div id="memory-container"></div>
-          </div>
-
-          <!-- Tab: Vínculos -->
-          <div class="tab-content" id="tab-vinculos">
-            <h3>Vínculos</h3>
-            <div id="bonds-container"></div>
-          </div>
-
-          <!-- Tab: Potenciales -->
-          <div class="tab-content" id="tab-potenciales">
-            <h3>Potenciales</h3>
-            <p class="placeholder-text">Sección en construcción</p>
-          </div>
+        <div class="tab-content active" id="tab-estadisticas">
+          <h3>Estadísticas Base</h3>
+          <canvas id="baseStatsChart"></canvas>
+          <div id="char-stats-text" class="stats-list"></div>
+        </div>
+        <div class="tab-content" id="tab-habilidades">
+          <h3>Habilidades</h3>
+          <div id="abilities-container"></div>
+        </div>
+        <div class="tab-content" id="tab-resonancias">
+          <h3>Resonancias de Habilidad</h3>
+          <div id="resonances-container"></div>
+        </div>
+        <div class="tab-content" id="tab-recuerdos">
+          <h3>Recuerdo</h3>
+          <div id="memory-container"></div>
+        </div>
+        <div class="tab-content" id="tab-vinculos">
+          <h3>Vínculos</h3>
+          <div id="bond-thumbnails"></div>
+          <div id="bond-details"></div>
+        </div>
+        <div class="tab-content" id="tab-potenciales">
+          <h3>Potenciales</h3>
+          <p class="placeholder-text">Sección en construcción</p>
         </div>
       </section>
     </div>
   </main>
+
+  <script src="https://cdn.jsdelivr.net/npm/tsparticles@2/tsparticles.bundle.min.js"></script>
+  <script>
+    if (window.tsParticles) {
+      tsParticles.load("particles-js", {
+        particles: {
+          number: { value: 80, density: { enable: true, value_area: 800 } },
+          color: { value: ["#ff3366", "#00d4ff", "#ff6b9d"] },
+          shape: { type: "circle" },
+          opacity: {
+            value: 0.5,
+            random: true,
+            anim: { enable: true, speed: 1, opacity_min: 0.1, sync: false }
+          },
+          size: {
+            value: 3,
+            random: true,
+            anim: { enable: true, speed: 2, size_min: 0.1, sync: false }
+          },
+          line_linked: {
+            enable: true,
+            distance: 150,
+            color: "#ff3366",
+            opacity: 0.2,
+            width: 1
+          },
+          move: {
+            enable: true,
+            speed: 1.5,
+            direction: "none",
+            random: false,
+            straight: false,
+            out_mode: "out",
+            bounce: false
+          }
+        },
+        interactivity: {
+          detect_on: "canvas",
+          events: {
+            onhover: { enable: true, mode: "grab" },
+            onclick: { enable: true, mode: "push" },
+            resize: true
+          },
+          modes: {
+            grab: { distance: 140, line_linked: { opacity: 0.5 } },
+            push: { particles_nb: 4 }
+          }
+        },
+        retina_detect: true
+      });
+    }
+  </script>
 
   <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
   <script src="js/utils.js"></script>
