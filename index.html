@@ -1,139 +1,81 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Wiki Hey Hey - Galería de Personajes</title>
-  <link rel="stylesheet" href="css/global.css" />
-  <link rel="stylesheet" href="css/gallery.css" />
-  <link href="https://fonts.googleapis.com/css2?family=Audiowide&display=swap" rel="stylesheet" />
-
-
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Wiki Hey Hey - Galería de Personajes</title>
+    <link rel="stylesheet" href="css/global.css" />
+    <link rel="stylesheet" href="css/gallery.css" />
 </head>
 <body>
-  <!-- Efectos de luz animados -->
-  <div class="light-orb-1"></div>
-  <div class="light-orb-2"></div>
-
-  <!-- Contenedor para partículas de fondo -->
-  <div id="particles-js"></div>
-
-  <header class="header">
-    <div class="container">
-      <h1 class="logo">Wiki Hey Hey</h1>
-      <p class="tagline">Fan Wiki de Haikyuu!! Fly High</p>
-    </div>
-  </header>
-
-  <main class="main">
-    <div class="container">
-      <section class="controls">
-        <div class="search-box">
-          <input 
-            type="text" 
-            id="search-input" 
-            class="search-input" 
-            placeholder="Buscar personaje por nombre..."
-          />
+    <header class="header">
+        <div class="container">
+            <h1 class="logo">Wiki Hey Hey</h1>
+            <p class="tagline">Fan Wiki de Haikyuu!! Fly High</p>
         </div>
-        <div class="filters">
-          <div class="filter-group">
-            <label for="filter-school">Escuela:</label>
-            <select id="filter-school" class="filter-select">
-              <option value="">Todas</option>
-            </select>
-          </div>
-          <div class="filter-group">
-            <label for="filter-position">Posición:</label>
-            <select id="filter-position" class="filter-select">
-              <option value="">Todas</option>
-            </select>
-          </div>
-          <div class="filter-group">
-            <label for="filter-rarity">Rareza:</label>
-            <select id="filter-rarity" class="filter-select">
-              <option value="">Todas</option>
-            </select>
-          </div>
-          <div class="filter-group">
-            <button id="reset-filters" class="btn-reset">Limpiar Filtros</button>
-          </div>
+    </header>
+
+    <main class="main">
+        <div class="container">
+            <!-- Controles de búsqueda y filtros -->
+            <section class="controls">
+                <div class="search-box">
+                    <input 
+                        type="text" 
+                        id="search-input" 
+                        class="search-input" 
+                        placeholder="Buscar personaje por nombre..."
+                    />
+                </div>
+                <div class="filters">
+                    <div class="filter-group">
+                        <label for="filter-school">Escuela:</label>
+                        <select id="filter-school" class="filter-select">
+                            <option value="">Todas</option>
+                        </select>
+                    </div>
+                    <div class="filter-group">
+                        <label for="filter-position">Posición:</label>
+                        <select id="filter-position" class="filter-select">
+                            <option value="">Todas</option>
+                        </select>
+                    </div>
+                    <div class="filter-group">
+                        <label for="filter-rarity">Rareza:</label>
+                        <select id="filter-rarity" class="filter-select">
+                            <option value="">Todas</option>
+                        </select>
+                    </div>
+                    <div class="filter-group">
+                        <button id="reset-filters" class="btn-reset">Limpiar Filtros</button>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Contador de resultados -->
+            <p class="results-count">
+                Mostrando <span id="results-count">0</span> personajes
+            </p>
+
+            <!-- Grid de personajes -->
+            <section id="characters-grid" class="characters-grid">
+                <!-- Las tarjetas se generan dinámicamente con JS -->
+            </section>
+
+            <!-- Mensaje cuando no hay resultados -->
+            <div id="no-results" class="no-results" style="display: none;">
+                No se encontraron personajes con los filtros aplicados.
+            </div>
         </div>
-      </section>
+    </main>
 
-      <p class="results-count">
-        Mostrando <span id="results-count">0</span> personajes
-      </p>
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2025 Wiki Hey Hey - Fan Wiki de Haikyuu!! Fly High</p>
+        </div>
+    </footer>
 
-      <section id="characters-grid" class="characters-grid">
-        <!-- Las tarjetas se generan dinámicamente con JS -->
-      </section>
-
-      <div id="no-results" class="no-results" style="display: none;">
-        No se encontraron personajes con los filtros aplicados.
-      </div>
-    </div>
-  </main>
-
-  <footer class="footer">
-    <div class="container">
-      <p>&copy; 2025 Wiki Hey Hey - Fan Wiki de Haikyuu!! Fly High</p>
-    </div>
-  </footer>
-
-  <script src="https://cdn.jsdelivr.net/npm/tsparticles@2/tsparticles.bundle.min.js"></script>
-  <script>
-    if (window.tsParticles) {
-      tsParticles.load("particles-js", {
-        particles: {
-          number: { value: 80, density: { enable: true, value_area: 800 } },
-          color: { value: ["#ff3366", "#00d4ff", "#ff6b9d"] },
-          shape: { type: "circle" },
-          opacity: {
-            value: 0.5,
-            random: true,
-            anim: { enable: true, speed: 1, opacity_min: 0.1, sync: false }
-          },
-          size: {
-            value: 3,
-            random: true,
-            anim: { enable: true, speed: 2, size_min: 0.1, sync: false }
-          },
-          line_linked: {
-            enable: true,
-            distance: 150,
-            color: "#ff3366",
-            opacity: 0.2,
-            width: 1
-          },
-          move: {
-            enable: true,
-            speed: 1.5,
-            direction: "none",
-            random: false,
-            straight: false,
-            out_mode: "out",
-            bounce: false
-          }
-        },
-        interactivity: {
-          detect_on: "canvas",
-          events: {
-            onhover: { enable: true, mode: "grab" },
-            onclick: { enable: true, mode: "push" },
-            resize: true
-          },
-          modes: {
-            grab: { distance: 140, line_linked: { opacity: 0.5 } },
-            push: { particles_nb: 4 }
-          }
-        },
-        retina_detect: true
-      });
-    }
-  </script>
-
-  <script src="js/utils.js"></script>
-  <script src="js/gallery.js"></script>
+    <script src="js/utils.js"></script>
+    <script src="js/gallery.js"></script>
 </body>
 </html>

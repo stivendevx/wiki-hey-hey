@@ -1,77 +1,125 @@
 :root {
-  --bg-primary: #060b25;
-  --bg-secondary: #1f132a;
-  --bg-card: #3a1923;
-  --bg-hover: #462524;
+  /* Colores */
+  --bg-primary: #1a1a1a;
+  --bg-secondary: #2a2a2a;
+  --bg-card: #333333;
+  --bg-hover: #404040;
+  --text-primary: #ffffff;
+  --text-secondary: #b0b0b0;
+  --text-muted: #808080;
+  --accent-primary: #c4ff0e;
+  --border-color: #404040;
 
-  --text-primary: #e0dcdc;
-  --text-secondary: #d3cfd0;
-  --text-muted: #a79c9f;
-
-  --accent-primary: #ff3366;
-  --accent-secondary: #00d4ff;
-  --accent-gold: #ffd700;
-  --border-color: #550f12;
-
+  /* Espaciado */
   --spacing-xs: 0.25rem;
   --spacing-sm: 0.5rem;
   --spacing-md: 1rem;
   --spacing-lg: 1.5rem;
   --spacing-xl: 2rem;
 
-  --radius-sm: 6px;
-  --radius-md: 10px;
-  --radius-lg: 14px;
+  /* Bordes */
+  --radius-sm: 4px;
+  --radius-md: 8px;
+  --radius-lg: 12px;
 
-  --shadow-sm: 0 2px 6px rgba(0, 0, 0, 0.7);
-  --shadow-md: 0 5px 12px rgba(0, 0, 0, 0.8);
-  --shadow-lg: 0 10px 24px rgba(0, 0, 0, 0.9);
-  --shadow-glow: 0 0 30px rgba(255, 51, 102, 0.4);
-  --transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+  /* Sombras */
+  --shadow-sm: 0 2px 4px rgba(0, 0, 0, 0.2);
+  --shadow-md: 0 4px 8px rgba(0, 0, 0, 0.3);
+  --shadow-lg: 0 8px 16px rgba(0, 0, 0, 0.4);
+
+  /* Transiciones */
+  --transition: all 0.3s ease;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
 body {
-  font-family: "Audiowide", Segoe UI, Tahoma, Geneva, Verdana, sans-serif;
-  background: linear-gradient(135deg, var(--bg-primary) 0%, #921212 100%);
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: var(--bg-primary);
   color: var(--text-primary);
   line-height: 1.6;
-  min-height: 100vh;
-  position: relative;
-  overflow-x: hidden;
 }
 
-/* ====== PARTICLES & LIGHTS base styles ====== */
-#particles-js {
-  position: fixed;
-  top: 0; left: 0;
-  width: 100vw; height: 100vh;
-  z-index: 0;
-  pointer-events: none;
+.container {
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 0 var(--spacing-lg);
 }
 
-.light-orb-1, .light-orb-2 {
-  position: fixed;
-  border-radius: 50%;
-  filter: blur(120px);
-  z-index: 0;
-  pointer-events: none;
-  animation: pulse-glow 6s ease-in-out infinite;
+/* Header */
+.header {
+  background-color: var(--bg-secondary);
+  padding: var(--spacing-lg) 0;
+  box-shadow: var(--shadow-md);
+  position: sticky;
+  top: 0;
+  z-index: 100;
 }
 
-.light-orb-1 {
-  top: 0; left: 25%;
-  width: 400px; height: 400px;
-  background: radial-gradient(circle, rgba(255,51,102,0.15) 0%, transparent 70%);
+.logo {
+  font-size: 2rem;
+  font-weight: bold;
+  color: var(--accent-primary);
+  margin-bottom: var(--spacing-xs);
 }
 
-.light-orb-2 {
-  bottom: 0; right: 25%;
-  width: 400px; height: 400px;
-  background: radial-gradient(circle, rgba(0,212,255,0.15) 0%, transparent 70%);
-  animation-delay: 3s;
+.logo-link {
+  color: var(--accent-primary);
+  text-decoration: none;
 }
 
-@keyframes pulse-glow {
-  0%, 100% { opacity: 0.3; transform: scale(1); }
-  50% { opacity: 0.6; transform: scale(1.1); }
+.tagline {
+  color: var(--text-secondary);
+  font-size: 0.9rem;
+}
+
+.nav {
+  margin-top: var(--spacing-md);
+}
+
+.nav-link {
+  color: var(--text-secondary);
+  text-decoration: none;
+  margin-right: var(--spacing-lg);
+  transition: var(--transition);
+}
+
+.nav-link:hover {
+  color: var(--accent-primary);
+}
+
+/* Main */
+.main {
+  min-height: calc(100vh - 200px);
+  padding: var(--spacing-xl) 0;
+}
+
+/* Footer */
+.footer {
+  background-color: var(--bg-secondary);
+  padding: var(--spacing-lg) 0;
+  text-align: center;
+  color: var(--text-muted);
+  margin-top: var(--spacing-xl);
+}
+
+/* Character section */
+.character-section {
+  background-color: var(--bg-secondary);
+  padding: var(--spacing-lg);
+  border-radius: var(--radius-lg);
+  margin-bottom: var(--spacing-lg);
+  box-shadow: var(--shadow-md);
+}
+
+.character-section h3 {
+  color: var(--accent-primary);
+  margin-bottom: var(--spacing-md);
+  font-size: 1.5rem;
+  border-bottom: 2px solid var(--accent-primary);
+  padding-bottom: var(--spacing-sm);
 }

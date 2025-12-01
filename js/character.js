@@ -7,7 +7,7 @@ let bonds = [];
 
 const abilityLevels = {};
 let memoryGrade = 'I';
-let memoryChart = null; // ⭐ Controla el gráfico de recuerdos
+let memoryChart = null; // ⭐ AGREGADO: Variable para controlar el gráfico
 
 async function init() {
   try {
@@ -39,7 +39,7 @@ async function init() {
     renderAbilitiesTab();
     renderResonancesTab();
     renderMemoryTab();
-    renderBondsTab(); // Renderizado vinculos
+    renderBondsTab();
     setupTabs();
   } catch (e) {
     console.error('Error en página de personaje:', e);
@@ -248,12 +248,13 @@ function saveMemoryGrade() {
 function renderMemoryTab() {
   const container = document.getElementById('memory-container');
   if (!container) return;
-
+  
+  // ⭐ DESTRUIR EL GRÁFICO ANTES de borrar el HTML
   if (memoryChart) {
     memoryChart.destroy();
     memoryChart = null;
   }
-
+  
   container.innerHTML = '';
 
   if (!character.memory) {
@@ -335,6 +336,7 @@ function renderMemoryTab() {
     });
   });
 
+  // ⭐ Pequeño delay para asegurar que el canvas esté en el DOM
   setTimeout(() => {
     const canvas = document.getElementById('memoryStatsChart');
     if (!canvas) return;
@@ -368,8 +370,8 @@ function renderMemoryTab() {
       },
       options: {
         responsive: true,
-        maintainAspectRatio: true,
-        aspectRatio: 3,
+        maintainAspectRatio: true, // ⭐ CAMBIADO A true
+        aspectRatio: 3, // ⭐ AGREGADO: ratio 3:1
         scales: {
           y: {
             beginAtZero: true,
@@ -413,84 +415,53 @@ function renderMemoryTab() {
   }, 0);
 }
 
+
 function renderBondsTab() {
-  const thumbnailsContainer = document.getElementById('bond-thumbnails');
-  const detailsContainer = document.getElementById('bond-details');
-  if (!thumbnailsContainer || !detailsContainer) return;
+  const container = document.getElementById('bonds-container');
+  if (!container) return;
+  container.innerHTML = '';
 
-  thumbnailsContainer.innerHTML = '';
-  detailsContainer.innerHTML = '<p class="placeholder-text">Selecciona un vínculo para ver sus detalles</p>';
+  const school = schools.find(s => s.id === character.id_school);
+  if (school && school.school_bond) {
+    container.innerHTML += `
+      <div class="bond-card school-bond">
+        <h4 class="bond-title">Bonificación: Vínculo de Escuela</h4>
+        <p class="bond-description">${school.school_bond}</p>
+      </div>
+    `;
+  }
 
-  if (!character || !bonds || bonds.length === 0) {
-    thumbnailsContainer.innerHTML = '<p class="placeholder-text">No hay vínculos disponibles</p>';
+  if (!character.bonds || character.bonds.length === 0) {
+    container.innerHTML += '<p class="placeholder-text">No hay vínculos con otros personajes</p>';
     return;
   }
 
-  // Filtrar vínculos donde el personaje está en el array characters
-  const characterBonds = bonds.filter(b => b.characters.includes(character.id));
+  const characterBonds = bonds.filter(b => character.bonds.includes(b.id));
 
-  if (characterBonds.length === 0) {
-    thumbnailsContainer.innerHTML = '<p class="placeholder-text">No hay vínculos disponibles</p>';
-    return;
-  }
-
-  characterBonds.forEach((bond, index) => {
-    const img = document.createElement('img');
-    img.src = bond.image || 'images/bonds/default-bond.png';
-    img.alt = bond.name;
-    img.title = bond.name;
-    img.className = 'bond-thumbnail';
-
-    img.addEventListener('click', () => {
-      thumbnailsContainer.querySelectorAll('.bond-thumbnail').forEach(i => i.classList.remove('active'));
-      img.classList.add('active');
-      showBondDetails(bond);
-    });
-
-    thumbnailsContainer.appendChild(img);
-  });
-
-  if (characterBonds.length > 0) {
-    thumbnailsContainer.children[0].classList.add('active');
-    showBondDetails(characterBonds[0]);
-  }
-
-  function showBondDetails(bond) {
-    let html = '';
-
-    if (bond.type === 'alineacion' && bond.icon) {
-      html += `
-        <div class="bond-header">
-          <img src="${bond.icon}" alt="${bond.name} icon" class="bond-icon" />
-          <h4 class="bond-title">${bond.name}</h4>
-        </div>
-      `;
-    } else {
-      html += `<h4 class="bond-title">${bond.name}</h4>`;
-    }
+  characterBonds.forEach(bond => {
+    const bondDiv = document.createElement('div');
+    bondDiv.className = 'bond-card';
+    let html = `<h4 class="bond-title">${bond.name}</h4>`;
 
     if (bond.type === 'bonus') {
       html += '<p class="bond-subtitle">Ventaja de Atributos de Vínculo</p>';
-      const myBonus = bond.bonuses?.[character.id];
+      const myBonus = bond.bonuses[character.id];
       if (myBonus) {
         for (let i = 1; i <= 5; i++) {
-          html += `<p class="bond-level"><strong>Nivel ${i}:</strong> ${myBonus[String(i)]}</p>`;
+          html += `<p class="bond-level">Nivel ${i}: ${myBonus[String(i)]}</p>`;
         }
-      } else {
-        html += '<p class="bond-level">No hay bonificaciones disponibles</p>';
       }
     } else if (bond.type === 'alineacion') {
       html += '<p class="bond-subtitle">Efecto de la habilidad del vínculo</p>';
       for (let i = 1; i <= 5; i++) {
-        const effect = bond.effects?.[String(i)];
-        if (effect) {
-          html += `<p class="bond-level"><strong>Nivel ${i}:</strong> ${effect}</p>`;
-        }
+        const effect = bond.effects[String(i)];
+        if (effect) html += `<p class="bond-level">Nivel ${i}: ${effect}</p>`;
       }
     }
 
-    detailsContainer.innerHTML = html;
-  }
+    bondDiv.innerHTML = html;
+    container.appendChild(bondDiv);
+  });
 }
 
 function setupTabs() {
