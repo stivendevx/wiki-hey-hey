@@ -222,7 +222,7 @@
   backdrop-filter: blur(10px);
   border-radius: 15px;
   border: 1px solid rgba(255, 255, 255, 0.2);
-  padding: 1px;
+  padding: 0;
   transition: var(--transition);
 }
 
@@ -357,29 +357,25 @@
 
 .card-specialties {
   display: flex;
-  gap: var(--spacing-xs);
+  gap: 10px;
   margin-top: var(--spacing-sm);
   flex-wrap: wrap;
   justify-content: center;
 }
 
 .specialty-icon {
-  width: 32px;
-  height: 32px;
+  width: 45px;
+  height: 45px;
   object-fit: contain;
   filter: brightness(0.8);
   transition: var(--transition);
-  background: rgba(31, 19, 42, 0.5);
-  border-radius: 8px;
-  padding: 4px;
-  border: 1px solid var(--border-color);
+  border-radius: 50%;
+  padding: none;
 }
 
 .specialty-icon:hover {
   filter: brightness(1.2);
   transform: scale(1.2) rotate(5deg);
-  box-shadow: 0 0 15px rgba(255, 51, 102, 0.6);
-  border-color: var(--accent-primary);
 }
 
 /* Mensaje sin resultados */
