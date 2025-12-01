@@ -1,0 +1,27 @@
+[
+  {
+    "id": "s",
+    "name": "S - Colocador",
+    "icon": "images/icons/positions/setter.png"
+  },
+  {
+    "id": "ws",
+    "name": "WS - Atacante Exterior",
+    "icon": "images/icons/positions/wing-spiker.png"
+  },
+  {
+    "id": "op",
+    "name": "OP - Opuesto",
+    "icon": "images/icons/positions/opposite.png"
+  },
+  {
+    "id": "mb",
+    "name": "MB - Central",
+    "icon": "images/icons/positions/middle-blocker.png"
+  },
+  {
+    "id": "li",
+    "name": "Li - Líbero",
+    "icon": "images/icons/positions/libero.png"
+  }
+]

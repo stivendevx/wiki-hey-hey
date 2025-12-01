@@ -1,0 +1,54 @@
+[
+  {
+    "id": "colocador",
+    "name": "Colocador",
+    "icon": "images/icons/specialties/setter.png",
+    "descriptions": {
+      "default": "Habilidad para realizar armados precisos y estratégicos que maximizan las oportunidades de ataque del equipo."
+    }
+  },
+  {
+    "id": "saque",
+    "name": "Saque",
+    "icon": "images/icons/specialties/serve.png",
+    "descriptions": {
+      "default": "Capacidad de realizar saques potentes y efectivos que desestabilizan la recepción rival."
+    }
+  },
+  {
+    "id": "bloqueo",
+    "name": "Bloqueo",
+    "icon": "images/icons/specialties/blocking.png",
+    "descriptions": {
+      "default": "Habilidad para bloquear ataques rivales en la red, formando un muro defensivo efectivo.",
+      "setter": "Como armador, capacidad de bloqueo limitada pero estratégica en momentos clave para frenar ataques."
+    }
+  },
+  {
+    "id": "recepcion",
+    "name": "Recepción",
+    "icon": "images/icons/specialties/reception.png",
+    "descriptions": {
+      "default": "Capacidad para recibir saques y defender el campo, manteniendo el balón en juego.",
+      "setter": "Como armador, recepción secundaria para mantener el juego fluido cuando el libero no puede alcanzar el balón."
+    }
+  },
+  {
+    "id": "atq-rapido",
+    "name": "Ataque Rápido",
+    "icon": "images/icons/specialties/quick-attack.png",
+    "descriptions": {
+      "default": "Ataques veloces y sincronizados con el armador que sorprenden al bloqueo rival.",
+      "setter": "Como armador, capacidad de realizar ataques rápidos cuando es necesario finalizar jugadas inesperadas."
+    }
+  },
+  {
+    "id": "atq-poderoso",
+    "name": "Ataque Poderoso",
+    "icon": "images/icons/specialties/power-attack.png",
+    "descriptions": {
+      "default": "Remates potentes y contundentes que rompen el bloqueo rival con pura fuerza.",
+      "setter": "Como armador, ataques de punta cuando es necesario romper el bloqueo rival o sorprender con un remate."
+    }
+  }
+]

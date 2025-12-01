@@ -1,0 +1,78 @@
+:root {
+  --bg-primary: #060b25;
+  --bg-secondary: #1f132a;
+  --bg-card: #3a1923;
+  --bg-hover: #462524;
+  
+  --text-primary: #e0dcdc;
+  --text-secondary: #d3cfd0;
+  --text-muted: #a79c9f;
+  
+  --accent-primary: #ff3366;
+  --accent-secondary: #00d4ff;
+  --accent-gold: #ffd700;
+  --border-color: #550f12;
+  
+  --spacing-xs: 0.25rem;
+  --spacing-sm: 0.5rem;
+  --spacing-md: 1rem;
+  --spacing-lg: 1.5rem;
+  --spacing-xl: 2rem;
+  
+  --radius-sm: 6px;
+  --radius-md: 10px;
+  --radius-lg: 14px;
+  
+  --shadow-sm: 0 2px 6px rgba(0, 0, 0, 0.7);
+  --shadow-md: 0 5px 12px rgba(0, 0, 0, 0.8);
+  --shadow-lg: 0 10px 24px rgba(0, 0, 0, 0.9);
+  --shadow-glow: 0 0 30px rgba(255, 51, 102, 0.4);
+  --transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background: linear-gradient(135deg, #060b25 0%, #921212 100%);
+  color: var(--text-primary);
+  line-height: 1.6;
+  min-height: 100vh;
+  position: relative;
+  overflow-x: hidden;
+}
+
+/* Partículas fondo */
+#particles-js {
+  position: fixed;
+  top: 0; left: 0;
+  width: 100vw; height: 100vh;
+  z-index: 0;
+  pointer-events: none;
+}
+
+/* Orbes de luz */
+.light-orb-1, .light-orb-2 {
+  position: fixed;
+  border-radius: 50%;
+  filter: blur(120px);
+  z-index: 0;
+  pointer-events: none;
+  animation: pulse-glow 6s ease-in-out infinite;
+}
+.light-orb-1 {
+  top: 0; left: 25%;
+  width: 400px; height: 400px;
+  background: radial-gradient(circle, rgba(255,51,102,0.15) 0%, transparent 70%);
+}
+.light-orb-2 {
+  bottom: 0; right: 25%;
+  width: 400px; height: 400px;
+  background: radial-gradient(circle, rgba(0,212,255,0.15) 0%, transparent 70%);
+  animation-delay: 3s;
+}
+
+@keyframes pulse-glow {
+  0%, 100% { opacity: 0.3; transform: scale(1); }
+  50% { opacity: 0.6; transform: scale(1.1); }
+}
+
+/* Otras reglas de layout, header, main, etc., como las que tengas */

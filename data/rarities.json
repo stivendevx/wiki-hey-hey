@@ -1,0 +1,32 @@
+[
+  {
+    "id": "sp",
+    "name": "SP",
+    "icon": "images/icons/rarities/sp.png"
+  },
+  {
+    "id": "ur",
+    "name": "UR",
+    "icon": "images/icons/rarities/ur.png"
+  },
+  {
+    "id": "ssr",
+    "name": "SSR",
+    "icon": "images/icons/rarities/ssr.png"
+  },
+  {
+    "id": "sr",
+    "name": "SR",
+    "icon": "images/icons/rarities/sr.png"
+  },
+  {
+    "id": "r",
+    "name": "R",
+    "icon": "images/icons/rarities/r.png"
+  },
+  {
+    "id": "n",
+    "name": "N",
+    "icon": "images/icons/rarities/n.png"
+  }
+]

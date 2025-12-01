@@ -1,0 +1,127 @@
+{
+  "id": "oikawa-ur",
+  "name": "Oikawa Tōru",
+  "name_kanji": "及川徹",
+  "rarity": "ur",
+  "id_school": "aoba-johsai",
+  "position": "s",
+  "height": 184,
+  "weight": 72,
+  "year": 3,
+  "jersey_number": 1,
+  "birthday": "1994-07-20",
+  "image_card": "images/characters/cards/oikawa-ur-card.png",
+  "image_profile": "images/characters/profiles/oikawa-ur-profile.png",
+  "description": "Capitán y armador estrella de Aoba Johsai. Conocido por su talento natural, estrategia en cancha y su icónico saque jump serve. Rival de Kageyama y mentor de su equipo.",
+  
+  "specialties": [
+    "colocador",
+    "saque",
+    "atq-poderoso"
+  ],
+  
+  "stats": {
+    "colocacion": 95,
+    "saque": 98,
+    "recuperacion": 82,
+    "bloqueo": 75,
+    "recepcion": 80,
+    "ataque_rapido": 70,
+    "ataque_poderoso": 88
+  },
+  
+  "abilities": [
+    {
+      "id": "oikawa-tactical-mind",
+      "name": "Tactical Mind",
+      "name_es": "Mente Táctica",
+      "type": "passive",
+      "tags": ["Pasiva", "Estrategia", "Armado"],
+      "icon": "images/abilities/oikawa-ur/oikawa-ur-ability-1.png",
+      "max_level": 3,
+      "descriptions": {
+        "1": "Aumenta la precisión de armados en un 10% cuando lee la formación rival.",
+        "2": "Aumenta la precisión de armados en un 20% y mejora la sincronización con atacantes.",
+        "3": "Armados perfectos que explotan las debilidades del bloqueo rival. Precisión +30%."
+      }
+    },
+    {
+      "id": "oikawa-jump-serve-master",
+      "name": "Jump Serve Master",
+      "name_es": "Maestro del Saque en Salto",
+      "type": "passive",
+      "tags": ["Pasiva", "Saque", "Presión"],
+      "icon": "images/abilities/oikawa-ur/oikawa-ur-ability-2.png",
+      "max_level": 3,
+      "descriptions": {
+        "1": "Saques en salto tienen un 15% más de potencia y efecto.",
+        "2": "Saques en salto tienen un 30% más de potencia. Dificulta la recepción rival.",
+        "3": "Saques devastadores que rompen la formación rival. Potencia +50%."
+      }
+    },
+    {
+      "id": "oikawa-team-coordination",
+      "name": "Team Coordination",
+      "name_es": "Coordinación de Equipo",
+      "type": "passive",
+      "tags": ["Pasiva", "Soporte", "Buff"],
+      "icon": "images/abilities/oikawa-ur/oikawa-ur-ability-3.png",
+      "max_level": 3,
+      "descriptions": {
+        "1": "Los aliados reciben +5 en Ataque cuando Oikawa realiza un armado.",
+        "2": "Los aliados reciben +10 en Ataque y +5 en Técnica tras armados de Oikawa.",
+        "3": "Máxima sinergia. Aliados +15 Ataque, +10 Técnica, +5 Moral."
+      }
+    },
+    {
+      "id": "oikawa-kings-pride",
+      "name": "King's Pride",
+      "name_es": "Orgullo del Rey",
+      "type": "ultimate",
+      "tags": ["Definitiva", "Área", "Ofensiva"],
+      "icon": "images/abilities/oikawa-ur/oikawa-ur-ability-4.png",
+      "max_level": 5,
+      "descriptions": {
+        "1": "Durante 3 turnos, aumenta Colocación +15 y Saque +15. Los armados tienen mayor precisión.",
+        "2": "Durante 4 turnos, aumenta Colocación +20, Saque +20 y mejora coordinación ofensiva del equipo.",
+        "3": "Durante 4 turnos, Colocación +25, Saque +25. Los aliados ignoran un 20% del bloqueo rival.",
+        "4": "Durante 5 turnos, Colocación +30, Saque +30. Armados perfectos garantizados y aliados +15 Ataque.",
+        "5": "Durante 6 turnos, dominio total de la cancha. Colocación +40, Saque +40, armados imparables y equipo +20 en todas las stats ofensivas."
+      }
+    }
+  ],
+  
+  "memory": {
+    "name": "El Gran Rey",
+    "image": "images/memories/oikawa-ur-memory.png",
+    "level": 70,
+    "stats_boost": {
+      "colocacion": 140,
+      "saque": 150,
+      "recuperacion": 100,
+      "bloqueo": 80,
+      "recepcion": 95,
+      "remate": 120
+    },
+    "exclusive_effects": {
+      "I": "Los armados de Oikawa tienen un 5% más de precisión en situaciones de presión.",
+      "II": "Cuando Oikawa realiza un saque ace, el siguiente armado es perfecto automáticamente.",
+      "III": "Los aliados que reciben armados de Oikawa obtienen +10 en Técnica ofensiva temporalmente.",
+      "IV": "En momentos críticos del partido, Oikawa puede realizar 2 armados consecutivos sin penalización.",
+      "V": "Dominio absoluto: Oikawa y sus aliados son inmunes a efectos de intimidación rival. Todas las stats de armado +15%."
+    }
+  },
+  
+  "resonances": {
+    "I": "Aumenta la moral del equipo cuando Oikawa realiza un armado exitoso bajo presión.",
+    "II": "Los saques de Oikawa tienen un 10% de probabilidad de romper completamente la formación rival.",
+    "III": "Cuando el equipo está perdiendo, Oikawa obtiene +20 en Colocación y Saque.",
+    "IV": "Los armados de Oikawa hacia el as del equipo tienen un 30% más de efectividad.",
+    "V": "Inspiración del capitán: Todo el equipo obtiene +15 en todas las stats ofensivas durante 2 turnos después de un punto crucial."
+  },
+  
+  "bonds": [
+    "setter-rivals",
+    "aoba-johsai-ace-setter"
+  ]
+}

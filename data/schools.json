@@ -1,0 +1,44 @@
+[
+  {
+    "id": "aoba-johsai",
+    "name": "Preparatoria Aoba Johsai",
+    "icon": "images/icons/schools/aoba-johsai.png",
+    "school_bond": "La regla del as. Mejora la coordinación ofensiva del equipo cuando el colocador está en la cancha, aumentando la precisión de los ataques."
+  },
+  {
+    "id": "karasuno",
+    "name": "Preparatoria Karasuno",
+    "icon": "images/icons/schools/karasuno.png",
+    "school_bond": "Los cuervos nunca se rinden. Aumenta la resistencia mental del equipo en momentos críticos, permitiendo recuperaciones increíbles."
+  },
+  {
+    "id": "nekoma",
+    "name": "Preparatoria Nekoma",
+    "icon": "images/icons/schools/nekoma.png",
+    "school_bond": "Conectar. Fortalece la defensa y recepción del equipo, haciendo que ningún balón toque el suelo fácilmente."
+  },
+  {
+    "id": "shiratorizawa",
+    "name": "Academia Shiratorizawa",
+    "icon": "images/icons/schools/shiratorizawa.png",
+    "school_bond": "Poder absoluto. Aumenta significativamente la potencia de ataque de todos los jugadores del equipo."
+  },
+  {
+    "id": "fukurodani",
+    "name": "Academia Fukurodani",
+    "icon": "images/icons/schools/fukurodani.png",
+    "school_bond": "Espíritu de lechuza. Mejora el estado de ánimo del equipo, aumentando todas las stats cuando el ace está motivado."
+  },
+  {
+    "id": "inarizaki",
+    "name": "Preparatoria Inarizaki",
+    "icon": "images/icons/schools/inarizaki.png",
+    "school_bond": "No necesitamos recuerdos. Potencia la concentración del equipo, reduciendo el impacto de distracciones externas."
+  },
+  {
+    "id": "date-tech",
+    "name": "Instituto Técnico Date",
+    "icon": "images/icons/schools/date-tech.png",
+    "school_bond": "El muro de hierro. Aumenta significativamente las capacidades de bloqueo de todo el equipo."
+  }
+]

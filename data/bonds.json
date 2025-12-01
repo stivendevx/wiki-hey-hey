@@ -1,0 +1,40 @@
+[
+  {
+    "id": "seijoh_powerhouse",
+    "type": "bonus",
+    "name": "Potencia de Seijoh",
+    "image": "images/bonds/seijoh_power.png",
+    "characters": ["oikawa-ur", "iwaizumi-ssr"],
+    "bonuses": {
+      "oikawa-ur": {
+        "1": "Saque+5 Saque+1%",
+        "2": "Saque+8 Saque+2%",
+        "3": "Saque+12 Saque+3%",
+        "4": "Saque+15 Saque+4%",
+        "5": "Saque+20 Saque+5%"
+      },
+      "iwaizumi-ssr": {
+        "1": "Ataque Poderoso+5 Ataque+1%",
+        "2": "Ataque Poderoso+8 Ataque+2%",
+        "3": "Ataque Poderoso+12 Ataque+3%",
+        "4": "Ataque Poderoso+15 Ataque+4%",
+        "5": "Ataque Poderoso+20 Ataque+5%"
+      }
+    }
+  },
+  {
+    "id": "setter_rivals",
+    "type": "alineacion",
+    "name": "Rivalidad de Armadores",
+    "image": "images/bonds/setter_rivals.png",
+    "icon": "images/bonds/setter_rivals_icon.png",
+    "characters": ["oikawa-ur", "kageyama-ur"],
+    "effects": {
+      "1": "Aumenta la Técnica ofensiva de ambos armadores en un 3%",
+      "2": "Aumenta la Técnica ofensiva de ambos armadores en un 5%",
+      "3": "Aumenta la Técnica ofensiva de ambos armadores en un 7%",
+      "4": "Aumenta la Técnica ofensiva de ambos armadores en un 10%",
+      "5": "Aumenta la Técnica ofensiva de ambos armadores en un 15% y reduce cooldown de definitivas"
+    }
+  }
+]
