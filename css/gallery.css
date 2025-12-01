@@ -401,7 +401,118 @@
   border-top: 2px solid rgba(255, 51, 102, 0.3);
 }
 
-/* Responsive */
+/* ====== Responsive mejorado ====== */
+
+/* Tablets y móviles grandes */
+@media (max-width: 900px) {
+  .container {
+    max-width: 100%;
+    padding: 0 1rem;
+  }
+
+  .controls {
+    padding: var(--spacing-md);
+    margin-bottom: var(--spacing-md);
+  }
+
+  .filters {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: var(--spacing-sm);
+  }
+
+  .characters-grid {
+    grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+    gap: var(--spacing-md);
+  }
+
+  .card-image-container {
+    height: 230px;
+  }
+
+  .card-body {
+    padding: var(--spacing-sm);
+  }
+}
+
+/* Móviles (≤ 768px) */
+@media (max-width: 768px) {
+  .header .container {
+    padding: 0 var(--spacing-md);
+  }
+
+  .logo {
+    font-size: 1.5rem;
+    text-align: center;
+  }
+
+  .tagline {
+    font-size: 0.8rem;
+    text-align: center;
+  }
+
+  .main {
+    padding: var(--spacing-lg) 0;
+  }
+
+  .controls {
+    padding: var(--spacing-md);
+  }
+
+  .filters {
+    grid-template-columns: 1fr;
+    gap: var(--spacing-sm);
+  }
+
+  .search-input,
+  .filter-select {
+    font-size: 0.9rem;
+    padding: 0.6rem;
+  }
+
+  .results-count {
+    font-size: 0.95rem;
+  }
+
+  .characters-grid {
+    grid-template-columns: repeat(auto-fill, minmax(170px, 1fr));
+    gap: var(--spacing-md);
+  }
+
+  .card-image-container {
+    height: 210px;
+  }
+
+  .card-name {
+    font-size: 1.1rem;
+  }
+
+  .card-name-kanji {
+    font-size: 0.8rem;
+  }
+
+  .card-rarity,
+  .card-school {
+    width: 36px;
+    height: 36px;
+  }
+
+  .specialty-icon {
+    width: 28px;
+    height: 28px;
+  }
+
+  /* En dispositivos táctiles no hace falta tanto hover */
+  .character-card:hover {
+    transform: none;
+    box-shadow: 0 12px 30px rgba(0, 0, 0, 0.8);
+  }
+
+  .character-card:hover .card-image {
+    transform: none;
+  }
+}
+
+/* Móviles muy pequeños (≤ 480px) */
 @media (max-width: 768px) {
   .logo {
     font-size: 1.5rem;
@@ -414,6 +525,30 @@
 
   .filters {
     grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 480px) {
+  .container {
+    padding: 0 0.75rem;
+  }
+
+  .controls {
+    margin-bottom: var(--spacing-md);
+  }
+
+  .characters-grid {
+    grid-template-columns: 1fr;
+    gap: var(--spacing-sm);
+  }
+
+  .card-image-container {
+    height: 260px;
+  }
+
+  .no-results {
+    padding: var(--spacing-lg);
+    font-size: 1rem;
   }
 }
 

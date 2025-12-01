@@ -75,3 +75,33 @@ body {
   0%, 100% { opacity: 0.3; transform: scale(1); }
   50% { opacity: 0.6; transform: scale(1.1); }
 }
+
+@media (max-width: 768px) {
+  :root {
+    --spacing-md: 0.75rem;
+    --spacing-lg: 1rem;
+    --spacing-xl: 1.5rem;
+  }
+
+  body {
+    font-size: 15px;
+  }
+
+
+  .light-orb-1,
+  .light-orb-2 {
+    filter: blur(80px);
+    opacity: 0.25;
+  }
+}
+
+@media (max-width: 480px) {
+  body {
+    font-size: 14px;
+  }
+
+  .light-orb-1,
+  .light-orb-2 {
+    display: none; /* si quieres máximo rendimiento en gamas bajas */
+  }
+}

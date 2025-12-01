@@ -1,5 +1,4 @@
-/* Base del body y contenedores ya en global.css */
-
+/* ==== Layout base personaje (desktop) ==== */
 /* Header especial con glassmorphism */
 .header-character {
   background: rgba(31, 19, 42, 0.7);
@@ -16,7 +15,7 @@
 
 @keyframes slideDown {
   from { transform: translateY(-100%); opacity: 0; }
-  to { transform: translateY(0); opacity: 1; }
+  to   { transform: translateY(0); opacity: 1; }
 }
 
 .container-character-header {
@@ -26,6 +25,10 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
+}
+
+.logo-section {
+  flex: 1;
 }
 
 .logo-box {
@@ -44,12 +47,10 @@
   box-shadow: 0 0 20px var(--accent-primary);
 }
 
-/* Título con gradiente animado */
 .title-character {
   flex: 2;
   text-align: center;
   font-size: 2rem;
-  color: var(--accent-primary);
   margin: 0;
   background: linear-gradient(135deg, #ff3366 0%, #ff6b9d 50%, #00d4ff 100%);
   background-size: 200% 200%;
@@ -62,10 +63,15 @@
 
 @keyframes gradient-flow {
   0%, 100% { background-position: 0% 50%; }
-  50% { background-position: 100% 50%; }
+  50%      { background-position: 100% 50%; }
 }
 
-.nav-section .btn-gallery {
+.nav-section {
+  flex: 1;
+  text-align: right;
+}
+
+.btn-gallery {
   background: rgba(58, 25, 35, 0.6);
   backdrop-filter: blur(10px);
   border: 2px solid var(--accent-primary);
@@ -75,9 +81,10 @@
   text-decoration: none;
   font-weight: 600;
   transition: var(--transition);
+  display: inline-block;
 }
 
-.nav-section .btn-gallery:hover {
+.btn-gallery:hover {
   background: var(--accent-primary);
   color: var(--bg-primary);
   box-shadow: 0 0 20px var(--accent-primary);
@@ -95,7 +102,6 @@
   padding: 0 1.5rem;
   display: flex;
   gap: 2rem;
-  flex-wrap: wrap;
 }
 
 /* Columna izquierda: perfil con glassmorphism */
@@ -269,7 +275,7 @@
   background: rgba(31, 19, 42, 0.8);
 }
 
-/* Contenedor contenido tabs */
+/* Contenido tabs */
 .tab-content {
   display: none;
   color: var(--text-secondary);
@@ -285,14 +291,13 @@
   font-size: 1.5rem;
 }
 
-/* Habilidades - Grid */
+/* ==== Habilidades ==== */
 #abilities-container {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   gap: 1rem;
 }
 
-/* Tarjetas de habilidad con efecto glassmorphism */
 .ability-card {
   background: rgba(58, 25, 35, 0.6);
   backdrop-filter: blur(10px);
@@ -426,421 +431,7 @@
   color: var(--text-primary);
 }
 
-/* Otros estilos para resonancias, recuerdos y vínculos se adaptarían similarmente al glassmorphism si quieres */
-
-@media (max-width: 900px) {
-  .container-character {
-    flex-direction: column;
-  }
-
-  .character-profile {
-    flex: none;
-    position: static;
-  }
-
-  .tabs-menu {
-    overflow-x: auto;
-  }
-
-  .tab-btn {
-    flex: none;
-    min-width: 120px;
-  }
-}
-
-@media (max-width: 768px) {
-  #abilities-container {
-    grid-template-columns: 1fr;
-  }
-}
-
-/* Animaciones extra */
-
-
-/* Header especial para página de personaje */
-.header-character {
-  background-color: var(--bg-secondary);
-  padding: 1rem 0;
-  box-shadow: var(--shadow-md);
-  border-bottom: 3px solid var(--accent-primary);
-}
-
-.container-character-header {
-  max-width: 1400px;
-  margin: 0 auto;
-  padding: 0 1.5rem;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-
-.logo-section {
-  flex: 1;
-}
-
-.logo-box {
-  background: var(--bg-card);
-  border: 2px solid var(--accent-primary);
-  padding: 0.5rem 1rem;
-  border-radius: var(--radius-sm);
-  font-weight: bold;
-  color: var(--accent-primary);
-  display: inline-block;
-}
-
-.title-character {
-  flex: 2;
-  text-align: center;
-  font-size: 2rem;
-  color: var(--accent-primary);
-  margin: 0;
-}
-
-.nav-section {
-  flex: 1;
-  text-align: right;
-}
-
-.btn-gallery {
-  background: var(--bg-card);
-  border: 2px solid var(--accent-primary);
-  color: var(--accent-primary);
-  padding: 0.6rem 1.2rem;
-  border-radius: var(--radius-md);
-  text-decoration: none;
-  font-weight: 600;
-  transition: var(--transition);
-  display: inline-block;
-}
-
-.btn-gallery:hover {
-  background: var(--accent-primary);
-  color: var(--bg-primary);
-}
-
-/* Main container */
-.main-character {
-  min-height: calc(100vh - 150px);
-  padding: 2rem 0;
-}
-
-.container-character {
-  max-width: 1400px;
-  margin: 0 auto;
-  padding: 0 1.5rem;
-  display: flex;
-  gap: 2rem;
-}
-
-/* Columna izquierda: perfil */
-.character-profile {
-  flex: 0 0 320px;
-  background: var(--bg-secondary);
-  border-radius: var(--radius-lg);
-  padding: 1.5rem;
-  box-shadow: var(--shadow-md);
-  height: fit-content;
-  position: sticky;
-  top: 1rem;
-}
-
-.profile-image-container {
-  position: relative;
-  margin-bottom: 1rem;
-  border-radius: var(--radius-lg);
-  overflow: hidden;
-}
-
-.profile-image {
-  width: 100%;
-  display: block;
-  object-fit: cover;
-}
-
-.profile-rarity {
-  position: absolute;
-  top: 10px;
-  left: 10px;
-  width: 50px;
-  height: 50px;
-  border-radius: 15px;
-}
-
-.profile-info {
-  text-align: center;
-}
-
-.profile-name {
-  font-size: 1.8rem;
-  color: var(--accent-primary);
-  margin-bottom: 0.25rem;
-}
-
-.profile-kanji {
-  color: var(--text-muted);
-  font-size: 1rem;
-  margin-bottom: 1rem;
-}
-
-.profile-row {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  gap: 0.5rem;
-  margin-bottom: 0.5rem;
-  color: var(--text-secondary);
-  font-size: 0.95rem;
-}
-
-.profile-icon {
-  border-radius: 50%;
-  width: 35px;
-  height: 35px;
-  object-fit: contain;
-}
-
-.profile-specialties {
-  margin-top: 1rem;
-  display: flex;
-  gap: 1rem;
-  flex-wrap: wrap;
-  justify-content: center;
-}
-
-.specialty-badge {
-  border-radius: 50%;
-  padding: 0;
-  border: 1px black solid;
-  width: 40px;
-  height: 40px;
-  object-fit: contain;
-  filter: brightness(0.8);
-  transition: var(--transition);
-}
-
-.specialty-badge:hover {
-  filter: brightness(1.2);
-  transform: scale(1.1);
-}
-
-/* Columna derecha: contenido con tabs */
-.character-content {
-  flex: 1;
-  background: var(--bg-secondary);
-  border-radius: var(--radius-lg);
-  box-shadow: var(--shadow-md);
-  overflow: hidden;
-}
-
-/* Menú de tabs */
-.tabs-menu {
-  background: var(--bg-card);
-  display: flex;
-  border-bottom: 2px solid var(--border-color);
-  overflow-x: auto;
-}
-
-.tab-btn {
-  flex: 1;
-  padding: 1rem;
-  background: transparent;
-  border: none;
-  color: var(--text-muted);
-  font-weight: 600;
-  font-size: 0.9rem;
-  cursor: pointer;
-  transition: var(--transition);
-  border-bottom: 3px solid transparent;
-  white-space: nowrap;
-}
-
-.tab-btn:hover {
-  color: var(--text-primary);
-  background: var(--bg-hover);
-}
-
-.tab-btn.active {
-  color: var(--accent-primary);
-  border-bottom-color: var(--accent-primary);
-  background: var(--bg-secondary);
-}
-
-/* Contenedor de contenido de tabs */
-.tab-content-container {
-  padding: 1.5rem;
-}
-
-.tab-content {
-  display: none;
-}
-
-.tab-content.active {
-  display: block;
-}
-
-.tab-content h3 {
-  color: var(--accent-primary);
-  margin-bottom: 1rem;
-  font-size: 1.5rem;
-}
-
-/* Canvas de gráficos */
-#baseStatsChart {
-  max-width: 100%;
-  margin-bottom: 1rem;
-}
-
-.stats-list {
-  color: var(--text-secondary);
-  line-height: 1.8;
-}
-
-.placeholder-text {
-  color: var(--text-muted);
-  text-align: center;
-  padding: 2rem;
-  font-style: italic;
-}
-
-/* Habilidades - Grid 2x2 */
-#abilities-container {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  gap: 1rem;
-}
-
-.ability-card {
-  background: var(--bg-card);
-  border: 2px solid var(--border-color);
-  border-radius: var(--radius-md);
-  padding: 1rem;
-  transition: var(--transition);
-}
-
-.ability-card:hover {
-  border-color: rgba(196, 255, 14, 0.3);
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
-}
-
-/* Definitiva destacada */
-.ability-card.ultimate {
-  background: linear-gradient(135deg, #2a2a2a 0%, #3a3a2a 100%);
-  border: 2px solid var(--accent-primary);
-  box-shadow: 0 0 20px rgba(196, 255, 14, 0.2);
-}
-
-.ability-card.ultimate:hover {
-  box-shadow: 0 0 30px rgba(196, 255, 14, 0.4);
-}
-
-.ability-header {
-  display: flex;
-  gap: 0.75rem;
-  margin-bottom: 0.75rem;
-  align-items: flex-start;
-}
-
-.ability-icon {
-  width: 48px;
-  height: 48px;
-  object-fit: contain;
-  border-radius: var(--radius-sm);
-  background: var(--bg-secondary);
-  padding: 0.25rem;
-  flex-shrink: 0;
-}
-
-.ability-info {
-  flex: 1;
-}
-
-.ability-name {
-  color: var(--accent-primary);
-  font-size: 1.1rem;
-  margin-bottom: 0.5rem;
-}
-
-.ability-card.ultimate .ability-name {
-  text-shadow: 0 0 10px rgba(196, 255, 14, 0.5);
-}
-
-.ability-tags {
-  display: flex;
-  gap: 0.5rem;
-  flex-wrap: wrap;
-}
-
-.ability-tag {
-  background: var(--bg-secondary);
-  color: var(--text-muted);
-  padding: 0.25rem 0.75rem;
-  border-radius: var(--radius-sm);
-  font-size: 0.85rem;
-  border: 1px solid var(--border-color);
-}
-
-.ability-tag.ultimate-tag {
-  background: var(--accent-primary);
-  color: var(--bg-primary);
-  border-color: var(--accent-primary);
-  font-weight: 700;
-  box-shadow: 0 0 10px rgba(196, 255, 14, 0.3);
-}
-
-.level-selector {
-  display: flex;
-  align-items: center;
-  gap: 0.5rem;
-  margin-bottom: 0.75rem;
-  flex-wrap: wrap;
-}
-
-.level-label {
-  color: var(--text-secondary);
-  font-weight: 600;
-  font-size: 0.9rem;
-}
-
-.level-btn {
-  width: 36px;
-  height: 36px;
-  background: var(--bg-secondary);
-  border: 2px solid var(--border-color);
-  border-radius: var(--radius-sm);
-  color: var(--text-secondary);
-  font-weight: 600;
-  cursor: pointer;
-  transition: var(--transition);
-  font-size: 0.9rem;
-}
-
-.level-btn:hover {
-  border-color: var(--accent-primary);
-  color: var(--accent-primary);
-  transform: scale(1.05);
-}
-
-.level-btn.active {
-  background: var(--accent-primary);
-  border-color: var(--accent-primary);
-  color: var(--bg-primary);
-}
-
-.ability-card.ultimate .level-btn.active {
-  box-shadow: 0 0 10px rgba(196, 255, 14, 0.5);
-}
-
-.ability-description {
-  color: var(--text-secondary);
-  line-height: 1.6;
-  font-size: 0.95rem;
-}
-
-.ability-card.ultimate .ability-description {
-  color: var(--text-primary);
-}
-
-/* Resonancias - Layout 3-2 */
+/* ==== Resonancias (layout 3–2) ==== */
 #resonances-container {
   display: grid;
   grid-template-columns: repeat(6, 1fr);
@@ -849,6 +440,11 @@
 
 .resonance-card {
   grid-column: span 2;
+  background: var(--bg-card);
+  border: 2px solid var(--border-color);
+  border-radius: var(--radius-md);
+  padding: 1rem;
+  transition: var(--transition);
 }
 
 #resonances-container .resonance-card:nth-child(4) {
@@ -857,14 +453,6 @@
 
 #resonances-container .resonance-card:nth-child(5) {
   grid-column: 4 / 6;
-}
-
-.resonance-card {
-  background: var(--bg-card);
-  border: 2px solid var(--border-color);
-  border-radius: var(--radius-md);
-  padding: 1rem;
-  transition: var(--transition);
 }
 
 .resonance-card:hover {
@@ -907,7 +495,7 @@
   font-size: 0.9rem;
 }
 
-/* Recuerdo - Layout nuevo con gráfico de puntos */
+/* ==== Recuerdo ==== */
 .memory-layout-new {
   display: flex;
   flex-direction: column;
@@ -940,7 +528,6 @@
   object-fit: cover;
 }
 
-/* Header del recuerdo */
 .memory-header {
   margin-bottom: 1.5rem;
 }
@@ -956,7 +543,7 @@
   font-size: 1rem;
 }
 
-/* Selector de grados con iconos */
+/* Selector de grados */
 .memory-grade-selector {
   margin-bottom: 1.5rem;
 }
@@ -1051,7 +638,7 @@
   padding: 1.25rem;
   border-radius: var(--radius-md);
   border: 2px solid var(--border-color);
-  overflow: hidden; /* si no está, agrégalo */
+  overflow: hidden;
   box-sizing: border-box;
 }
 
@@ -1067,7 +654,7 @@
   display: block;
 }
 
-/* Vínculos */
+/* ==== Vínculos ==== */
 .bond-card {
   background: var(--bg-card);
   border: 1px solid var(--border-color);
@@ -1135,23 +722,6 @@
   min-height: 120px;
 }
 
-.bond-title {
-  color: var(--accent-primary);
-  font-size: 1.2rem;
-  margin-bottom: 0.5rem;
-}
-
-.bond-subtitle {
-  color: var(--text-muted);
-  font-size: 0.9rem;
-  margin-bottom: 0.75rem;
-  font-weight: 600;
-}
-
-.bond-level {
-  margin: 0.15rem 0;
-}
-
 .bond-header {
   display: flex;
   align-items: center;
@@ -1171,20 +741,32 @@
   font-size: 1.3rem;
 }
 
+/* ==== Responsive ==== */
 
-/* Responsive */
+/* Tablets / portátiles pequeños */
 @media (max-width: 1024px) {
+  .container-character {
+    flex-direction: column;
+    gap: var(--spacing-lg);
+  }
+
+  .character-profile {
+    position: static;
+    width: 100%;
+    max-width: 420px;
+    margin: 0 auto var(--spacing-lg);
+  }
+
+  .character-content {
+    width: 100%;
+  }
+
   #resonances-container {
     grid-template-columns: repeat(4, 1fr);
   }
-  
-  .resonance-card {
-    grid-column: span 2;
-  }
 
-  #resonances-container .resonance-card:nth-child(4),
-  #resonances-container .resonance-card:nth-child(5) {
-    grid-column: span 2;
+  .resonance-card {
+    grid-column: span 5;
   }
 
   .memory-top {
@@ -1193,39 +775,88 @@
 
   .memory-left {
     flex: none;
+    width: 100%;
   }
 }
 
-@media (max-width: 900px) {
-  .container-character {
-    flex-direction: column;
+/* Móviles (≤ 768px) */
+@media (max-width: 768px) {
+  .header-character {
+    padding: 0.5rem 0;
   }
 
-  .character-profile {
-    flex: none;
-    position: static;
+  .container-character-header {
+    flex-direction: column;
+    gap: 0.5rem;
+    text-align: center;
+  }
+
+  .title-character {
+    font-size: 1.5rem;
+  }
+
+  .container-character {
+    padding: 0 var(--spacing-md);
+    gap: var(--spacing-lg);
+  }
+
+  .character-profile,
+  .character-content {
+    box-shadow: var(--shadow-md);
+    padding: var(--spacing-md);
+    backdrop-filter: blur(10px);
   }
 
   .tabs-menu {
-    overflow-x: scroll;
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
   }
 
   .tab-btn {
     flex: none;
-    min-width: 120px;
-  }
-}
-
-@media (max-width: 768px) {
-  #abilities-container {
-    grid-template-columns: 1fr;
+    min-width: 110px;
+    font-size: 0.85rem;
+    padding: 0.6rem 0.4rem;
   }
 
+  #abilities-container,
   #resonances-container {
     grid-template-columns: 1fr;
   }
-  
+
+  .ability-card,
   .resonance-card {
-    grid-column: span 1;
+    padding: var(--spacing-md);
+  }
+
+  .memory-top {
+    flex-direction: column;
+  }
+
+  #baseStatsChart,
+  #memoryStatsChart {
+    max-height: 260px;
+  }
+}
+
+/* Móviles muy pequeños (≤ 480px) */
+@media (max-width: 480px) {
+  .title-character {
+    font-size: 1.3rem;
+  }
+
+  .character-profile,
+  .character-content {
+    padding: var(--spacing-md);
+  }
+
+  .tab-btn {
+    min-width: 95px;
+    font-size: 0.8rem;
+  }
+
+  #baseStatsChart,
+  #memoryStatsChart {
+    max-height: 230px;
   }
 }
