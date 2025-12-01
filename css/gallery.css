@@ -219,11 +219,10 @@
 }
 
 .card-rarity, .card-school {
-  background: rgba(0, 0, 0, 0.5);
   backdrop-filter: blur(10px);
-  border-radius: 12px;
+  border-radius: 15px;
   border: 1px solid rgba(255, 255, 255, 0.2);
-  padding: 6px;
+  padding: 1px;
   transition: var(--transition);
 }
 
@@ -350,6 +349,7 @@
 }
 
 .card-info-icon {
+  border-radius: 50%;
   width: 24px;
   height: 24px;
   object-fit: contain;
