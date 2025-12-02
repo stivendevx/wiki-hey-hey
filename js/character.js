@@ -320,7 +320,7 @@ function renderMemoryTab() {
 
       <div class="memory-bottom">
         <h5>Mejoras de Stats</h5>
-        anvas id="memoryStatsChart"></canvas>
+        <canvas id="memoryStatsChart"></canvas>
       </div>
     </div>
   `;
