@@ -62,7 +62,7 @@
     "type": "alineacion",
     "name": "Química Perfecta",
     "image": "images/bonds/quimica-perfecta.png",
-    "icon": "images/bonds/quimica-perfecta-icon.png",
+    "icon": "images/bonds/icons/quimica-perfecta-icon.png",
     "characters": ["oikawa-ur", "iwaizumi-ssr"],
     "effects": {
       "1":"TORU OIKAWA ejecuta un pase, HAJIME IWAIZUMU ejecuta un Remate poderoso con un poder equivalente al 255% del atributo Poderoso, y tu equipo recibe 2 acumulaciones de la ventaja [Ritmo de Ataque]. Cada Acumulación de la ventaja [Ritmo de Ataque] aumenta la Percepción de los jugadores de tu equipo en un 1%, hasta 10 acumulaciones.",
