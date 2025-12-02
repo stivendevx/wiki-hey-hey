@@ -30,21 +30,30 @@
   --transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
 }
 
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
 body {
-  font-family: "Audiowide", Segoe UI, Tahoma, Geneva, Verdana, sans-serif;
+  font-family: "Audiowide", "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
   background: linear-gradient(135deg, var(--bg-primary) 0%, #921212 100%);
   color: var(--text-primary);
   line-height: 1.6;
   min-height: 100vh;
   position: relative;
   overflow-x: hidden;
+  font-size: 16px; /* Base legible en móvil */
 }
 
 /* ====== PARTICLES & LIGHTS base styles ====== */
 #particles-js {
   position: fixed;
-  top: 0; left: 0;
-  width: 100vw; height: 100vh;
+  top: 0; 
+  left: 0;
+  width: 100vw; 
+  height: 100vh;
   z-index: 0;
   pointer-events: none;
 }
@@ -59,14 +68,18 @@ body {
 }
 
 .light-orb-1 {
-  top: 0; left: 25%;
-  width: 400px; height: 400px;
+  top: 0; 
+  left: 25%;
+  width: 400px; 
+  height: 400px;
   background: radial-gradient(circle, rgba(255,51,102,0.15) 0%, transparent 70%);
 }
 
 .light-orb-2 {
-  bottom: 0; right: 25%;
-  width: 400px; height: 400px;
+  bottom: 0; 
+  right: 25%;
+  width: 400px; 
+  height: 400px;
   background: radial-gradient(circle, rgba(0,212,255,0.15) 0%, transparent 70%);
   animation-delay: 3s;
 }
@@ -76,6 +89,71 @@ body {
   50% { opacity: 0.6; transform: scale(1.1); }
 }
 
+/* ====== HEADER & CONTAINER BASE ====== */
+.header {
+  background: rgba(31, 19, 42, 0.7);
+  backdrop-filter: blur(20px);
+  padding: var(--spacing-lg) 0;
+  text-align: center;
+  border-bottom: 3px solid var(--accent-primary);
+  box-shadow: var(--shadow-md);
+  position: relative;
+  z-index: 10;
+}
+
+.container {
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 0 var(--spacing-lg);
+}
+
+.logo {
+  font-size: 2.5rem;
+  background: linear-gradient(135deg, #ff3366, #ff6b9d, #00d4ff);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  margin-bottom: var(--spacing-xs);
+  text-shadow: 0 0 20px rgba(255, 51, 102, 0.5);
+}
+
+.tagline {
+  color: var(--text-muted);
+  font-size: 1rem;
+  letter-spacing: 0.05em;
+}
+
+.main {
+  position: relative;
+  z-index: 1;
+  padding: var(--spacing-xl) 0;
+  min-height: calc(100vh - 200px);
+}
+
+/* ====== RESPONSIVE GLOBAL ====== */
+
+/* Tablets (768px - 1024px) */
+@media (max-width: 1024px) {
+  :root {
+    --spacing-md: 0.85rem;
+    --spacing-lg: 1.25rem;
+    --spacing-xl: 1.75rem;
+  }
+
+  .container {
+    padding: 0 var(--spacing-lg);
+  }
+
+  .logo {
+    font-size: 2rem;
+  }
+
+  .tagline {
+    font-size: 0.95rem;
+  }
+}
+
+/* Móviles (≤ 768px) */
 @media (max-width: 768px) {
   :root {
     --spacing-md: 0.75rem;
@@ -84,24 +162,151 @@ body {
   }
 
   body {
-    font-size: 15px;
+    font-size: 16px; /* NO bajar de 16px para legibilidad */
   }
 
+  .header {
+    padding: var(--spacing-md) 0;
+  }
 
+  .container {
+    padding: 0 var(--spacing-md);
+  }
+
+  .logo {
+    font-size: 1.8rem;
+  }
+
+  .tagline {
+    font-size: 0.9rem;
+  }
+
+  .main {
+    padding: var(--spacing-lg) 0;
+  }
+
+  /* Reducir intensidad de efectos visuales */
   .light-orb-1,
   .light-orb-2 {
     filter: blur(80px);
     opacity: 0.25;
+    width: 300px;
+    height: 300px;
+  }
+
+  /* Reducir opacidad de partículas */
+  #particles-js {
+    opacity: 0.5;
   }
 }
 
-@media (max-width: 480px) {
+/* Móviles pequeños (≤ 600px) */
+@media (max-width: 600px) {
   body {
-    font-size: 14px;
+    font-size: 15px;
+  }
+
+  .logo {
+    font-size: 1.6rem;
+  }
+
+  .tagline {
+    font-size: 0.85rem;
+  }
+
+  .main {
+    padding: var(--spacing-md) 0;
+  }
+}
+
+/* Móviles muy pequeños (≤ 480px) */
+@media (max-width: 480px) {
+  :root {
+    --spacing-md: 0.65rem;
+    --spacing-lg: 0.85rem;
+    --spacing-xl: 1.25rem;
+  }
+
+  body {
+    font-size: 15px;
+  }
+
+  .container {
+    padding: 0 var(--spacing-sm);
+  }
+
+  .logo {
+    font-size: 1.4rem;
+  }
+
+  .tagline {
+    font-size: 0.8rem;
+  }
+
+  /* Desactivar efectos pesados */
+  .light-orb-1,
+  .light-orb-2 {
+    display: none;
+  }
+
+  #particles-js {
+    display: none; /* Mejor rendimiento en móviles antiguos */
+  }
+}
+
+/* ====== OPTIMIZACIONES DE RENDIMIENTO ====== */
+
+/* Reducir animaciones en dispositivos con movimiento limitado */
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
   }
 
   .light-orb-1,
   .light-orb-2 {
-    display: none; /* si quieres máximo rendimiento en gamas bajas */
+    animation: none;
   }
 }
+
+/* Optimización para pantallas táctiles */
+@media (hover: none) and (pointer: coarse) {
+  /* Aumentar áreas táctiles mínimas */
+  button,
+  a,
+  input,
+  select {
+    min-height: 44px; /* Tamaño mínimo recomendado para táctil */
+  }
+}
+
+/* ====== UTILIDADES GENERALES ====== */
+.text-center {
+  text-align: center;
+}
+
+.text-muted {
+  color: var(--text-muted);
+}
+
+.text-primary {
+  color: var(--accent-primary);
+}
+
+.mt-1 { margin-top: var(--spacing-xs); }
+.mt-2 { margin-top: var(--spacing-sm); }
+.mt-3 { margin-top: var(--spacing-md); }
+.mt-4 { margin-top: var(--spacing-lg); }
+
+.mb-1 { margin-bottom: var(--spacing-xs); }
+.mb-2 { margin-bottom: var(--spacing-sm); }
+.mb-3 { margin-bottom: var(--spacing-md); }
+.mb-4 { margin-bottom: var(--spacing-lg); }
+
+.p-1 { padding: var(--spacing-xs); }
+.p-2 { padding: var(--spacing-sm); }
+.p-3 { padding: var(--spacing-md); }
+.p-4 { padding: var(--spacing-lg); }

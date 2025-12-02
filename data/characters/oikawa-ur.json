@@ -21,94 +21,94 @@
   ],
   
   "stats": {
-    "colocacion": 95,
-    "saque": 98,
-    "recuperacion": 82,
-    "bloqueo": 75,
-    "recepcion": 80,
-    "ataque_rapido": 70,
-    "ataque_poderoso": 88
+    "colocacion": 1627,
+    "saque": 1705,
+    "recuperacion": 1290,
+    "bloqueo": 1530,
+    "recepcion": 1378,
+    "ataque_rapido": 212,
+    "ataque_poderoso": 1533
   },
   
   "abilities": [
     {
-      "id": "oikawa-tactical-mind",
-      "name": "Tactical Mind",
-      "name_es": "Mente Táctica",
+      "id": "oikawa-ur-h1",
+      "name": "COLOCACIÓN DEL GRAN REY",
+      "name_es": "COLOCACIÓN DEL GRAN REY",
       "type": "passive",
-      "tags": ["Pasiva", "Estrategia", "Armado"],
+      "tags": ["Pasiva", "Colocacción", "Ritmo de Ataque"],
       "icon": "images/abilities/oikawa-ur/oikawa-ur-ability-1.png",
       "max_level": 3,
       "descriptions": {
-        "1": "Aumenta la precisión de armados en un 10% cuando lee la formación rival.",
-        "2": "Aumenta la precisión de armados en un 20% y mejora la sincronización con atacantes.",
-        "3": "Armados perfectos que explotan las debilidades del bloqueo rival. Precisión +30%."
+        "1": "TORU OIKAWA ejecuta un pase con un poder equivalente al 120% del atributo Pase. Si los jugadores de tu equipo logran un resultado crítico, recibe 1 acumulaciones de la ventaja [Ritmo de Ataque]. Cada acumulación de esta ventaja aumenta la Percepción de los jugadores de tu equipo en un 1%. Puede acumularse hasta 10 veces.",
+        "2": "TORU OIKAWA ejecuta un pase con un poder equivalente al 120% del atributo Pase. Si los jugadores de tu equipo logran un resultado crítico, recibe 1 acumulaciones de la ventaja [Ritmo de Ataque]. Cada acumulación de esta ventaja aumenta la Percepción de los jugadores de tu equipo en un 1%. Puede acumularse hasta 10 veces.",
+        "3": "TORU OIKAWA ejecuta un pase con un poder equivalente al 120% del atributo Pase. Si los jugadores de tu equipo logran un resultado crítico, recibe 1 acumulaciones de la ventaja [Ritmo de Ataque]. Cada acumulación de esta ventaja aumenta la Percepción de los jugadores de tu equipo en un 1%. Puede acumularse hasta 10 veces."
       }
     },
     {
-      "id": "oikawa-jump-serve-master",
-      "name": "Jump Serve Master",
-      "name_es": "Maestro del Saque en Salto",
+      "id": "oikawa-ur-h2",
+      "name": "ANALISTA DE LA CANCHA",
+      "name_es": "ANALISTA DE LA CANCHA",
       "type": "passive",
-      "tags": ["Pasiva", "Saque", "Presión"],
+      "tags": ["Pasiva", "Finta de Colocador", "Interrupción de Bloqueo"],
       "icon": "images/abilities/oikawa-ur/oikawa-ur-ability-2.png",
       "max_level": 3,
       "descriptions": {
-        "1": "Saques en salto tienen un 15% más de potencia y efecto.",
-        "2": "Saques en salto tienen un 30% más de potencia. Dificulta la recepción rival.",
-        "3": "Saques devastadores que rompen la formación rival. Potencia +50%."
+        "1": "TORU OIKAWA ejecuta una finta de colocador imbloqueable con un poder equivalente al 115% del atributo Pase. Si OIKAWA está presente, aumenta en un 20% la Fuerza de los jugadores de tipo Poder en tu equipo.",
+        "2": "TORU OIKAWA ejecuta una finta de colocador imbloqueable con un poder equivalente al 115% del atributo Pase. Si OIKAWA está presente, aumenta en un 20% la Fuerza de los jugadores de tipo Poder en tu equipo.",
+        "3": "TORU OIKAWA ejecuta una finta de colocador imbloqueable con un poder equivalente al 115% del atributo Pase. Si OIKAWA está presente, aumenta en un 20% la Fuerza de los jugadores de tipo Poder en tu equipo."
       }
     },
     {
-      "id": "oikawa-team-coordination",
-      "name": "Team Coordination",
-      "name_es": "Coordinación de Equipo",
+      "id": "oikawa-ur-h3",
+      "name": "LÍDER DE LA CANCHA",
+      "name_es": "LÍDER DE LA CANCHA",
       "type": "passive",
-      "tags": ["Pasiva", "Soporte", "Buff"],
+      "tags": ["Pasiva", "Aumento de Percepción"],
       "icon": "images/abilities/oikawa-ur/oikawa-ur-ability-3.png",
       "max_level": 3,
       "descriptions": {
-        "1": "Los aliados reciben +5 en Ataque cuando Oikawa realiza un armado.",
-        "2": "Los aliados reciben +10 en Ataque y +5 en Técnica tras armados de Oikawa.",
-        "3": "Máxima sinergia. Aliados +15 Ataque, +10 Técnica, +5 Moral."
+        "1": "si TORU OIKAWA está presente, aumenta la Percepción de los jugadores de tu equipo en un 10%. Cuando un jugador de tu equipo use la habilidad Remate poderoso, usará 6 acumulaciones de la ventaja [Ritmo de Ataque] para garantizar que este remate sea crítico.",
+        "2": "si TORU OIKAWA está presente, aumenta la Percepción de los jugadores de tu equipo en un 10%. Cuando un jugador de tu equipo use la habilidad Remate poderoso, usará 6 acumulaciones de la ventaja [Ritmo de Ataque] para garantizar que este remate sea crítico.",
+        "3": "si TORU OIKAWA está presente, aumenta la Percepción de los jugadores de tu equipo en un 10%. Cuando un jugador de tu equipo use la habilidad Remate poderoso, usará 6 acumulaciones de la ventaja [Ritmo de Ataque] para garantizar que este remate sea crítico."
       }
     },
     {
-      "id": "oikawa-kings-pride",
-      "name": "King's Pride",
-      "name_es": "Orgullo del Rey",
+      "id": "oikawa-ur-h4",
+      "name": "SAQUE CON SALTO DEL GRAN REY",
+      "name_es": "SAQUE CON SALTO DEL GRAN REY",
       "type": "ultimate",
-      "tags": ["Definitiva", "Área", "Ofensiva"],
+      "tags": ["Definitiva", "Pasiva", "Saque", "Bonificación de atributo"],
       "icon": "images/abilities/oikawa-ur/oikawa-ur-ability-4.png",
       "max_level": 5,
       "descriptions": {
-        "1": "Durante 3 turnos, aumenta Colocación +15 y Saque +15. Los armados tienen mayor precisión.",
-        "2": "Durante 4 turnos, aumenta Colocación +20, Saque +20 y mejora coordinación ofensiva del equipo.",
-        "3": "Durante 4 turnos, Colocación +25, Saque +25. Los aliados ignoran un 20% del bloqueo rival.",
-        "4": "Durante 5 turnos, Colocación +30, Saque +30. Armados perfectos garantizados y aliados +15 Ataque.",
-        "5": "Durante 6 turnos, dominio total de la cancha. Colocación +40, Saque +40, armados imparables y equipo +20 en todas las stats ofensivas."
+        "1": "TORU OIKAWA ejecuta un Saque con Salto Poderoso con un poder equivalente al 260% del atributo Saque. Para este saque, OIKAWA aumenta en un 20% su atributo Percepción y en un 20% su atributo Fuerza.",
+        "2": "TORU OIKAWA ejecuta un Saque con Salto Poderoso con un poder equivalente al 260% del atributo Saque. Para este saque, OIKAWA aumenta en un 20% su atributo Percepción y en un 20% su atributo Fuerza.",
+        "3": "TORU OIKAWA ejecuta un Saque con Salto Poderoso con un poder equivalente al 260% del atributo Saque. Para este saque, OIKAWA aumenta en un 20% su atributo Percepción y en un 20% su atributo Fuerza.",
+        "4": "TORU OIKAWA ejecuta un Saque con Salto Poderoso con un poder equivalente al 260% del atributo Saque. Para este saque, OIKAWA aumenta en un 20% su atributo Percepción y en un 20% su atributo Fuerza.",
+        "5": "TORU OIKAWA ejecuta un Saque con Salto Poderoso con un poder equivalente al 260% del atributo Saque. Para este saque, OIKAWA aumenta en un 20% su atributo Percepción y en un 20% su atributo Fuerza."
       }
     }
   ],
   
   "memory": {
-    "name": "El Gran Rey",
+    "name": "Potenciación de Saque: TORU OIKAWA",
     "image": "images/memories/oikawa-ur-memory.png",
-    "level": 70,
+    "level": 80,
     "stats_boost": {
-      "colocacion": 140,
-      "saque": 150,
-      "recuperacion": 100,
-      "bloqueo": 80,
-      "recepcion": 95,
-      "remate": 120
+      "colocacion": 729,
+      "saque": 729,
+      "recuperacion": 507,
+      "bloqueo": 665,
+      "recepcion": 539,
+      "remate": 570
     },
     "exclusive_effects": {
-      "I": "Los armados de Oikawa tienen un 5% más de precisión en situaciones de presión.",
-      "II": "Cuando Oikawa realiza un saque ace, el siguiente armado es perfecto automáticamente.",
-      "III": "Los aliados que reciben armados de Oikawa obtienen +10 en Técnica ofensiva temporalmente.",
-      "IV": "En momentos críticos del partido, Oikawa puede realizar 2 armados consecutivos sin penalización.",
-      "V": "Dominio absoluto: Oikawa y sus aliados son inmunes a efectos de intimidación rival. Todas las stats de armado +15%."
+      "I": "Mientras el portador está en la cancha, cuando 'Ritmo de Ataque' de tu equipo alcanza 6 acumulaciones, los atributos Fuerza y Espíritu de tus jugadores aumentan en un 2%; se acumula hasta 3 veces.",
+      "II": "Mientras el portador está en la cancha, cuando 'Ritmo de Ataque' de tu equipo alcanza 6 acumulaciones, los atributos Fuerza y Espíritu de tus jugadores aumentan en un 2%; se acumula hasta 3 veces.",
+      "III": "Mientras el portador está en la cancha, cuando 'Ritmo de Ataque' de tu equipo alcanza 6 acumulaciones, los atributos Fuerza y Espíritu de tus jugadores aumentan en un 2%; se acumula hasta 3 veces.",
+      "IV": "Mientras el portador está en la cancha, cuando 'Ritmo de Ataque' de tu equipo alcanza 6 acumulaciones, los atributos Fuerza y Espíritu de tus jugadores aumentan en un 2%; se acumula hasta 3 veces.",
+      "V": "Mientras el portador está en la cancha, cuando 'Ritmo de Ataque' de tu equipo alcanza 6 acumulaciones, los atributos Fuerza y Espíritu de tus jugadores aumentan en un 2%; se acumula hasta 3 veces."
     }
   },
   

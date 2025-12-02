@@ -1,27 +1,27 @@
 [
   {
     "id": "s",
-    "name": "S - Colocador",
+    "name": "Colocador",
     "icon": "images/icons/positions/setter.png"
   },
   {
     "id": "ws",
-    "name": "WS - Atacante Exterior",
+    "name": "Atacante Exterior",
     "icon": "images/icons/positions/wing-spiker.png"
   },
   {
     "id": "op",
-    "name": "OP - Opuesto",
+    "name": "Opuesto",
     "icon": "images/icons/positions/opposite.png"
   },
   {
     "id": "mb",
-    "name": "MB - Central",
+    "name": "Bloqueador Central",
     "icon": "images/icons/positions/middle-blocker.png"
   },
   {
     "id": "li",
-    "name": "Li - Líbero",
+    "name": "Líbero",
     "icon": "images/icons/positions/libero.png"
   }
 ]

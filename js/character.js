@@ -118,7 +118,7 @@ function renderStatsTab() {
       scales: {
         r: {
           min: 0,
-          max: 150,
+          max: 2000,
           ticks: { backdropColor: 'transparent', display: false },
           pointLabels: { color: '#b0b0b0', display: true, font: { size: 13 } },
           grid: { color: '#404040' }
@@ -373,7 +373,7 @@ function renderMemoryTab() {
         scales: {
           y: {
             beginAtZero: true,
-            max: 150,
+            max: 1000,
             ticks: {
               color: '#c4ff0e',
               font: { size: 12 }
