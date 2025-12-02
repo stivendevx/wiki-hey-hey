@@ -758,6 +758,34 @@
   font-size: 1.3rem;
 }
 
+.bond-level-selector {
+  margin: 0.75rem 0;
+  display: flex;
+  gap: 0.4rem;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.bond-level-btn {
+  border: 1px solid var(--border-color);
+  background: var(--bg-card);
+  color: var(--accent-primary);
+  border-radius: 6px;
+  padding: 0.35rem 0.9rem;
+  font-weight: 600;
+  font-size: 0.9rem;
+  cursor: pointer;
+  transition: var(--transition);
+}
+
+.bond-level-btn.active,
+.bond-level-btn:hover {
+  background: var(--accent-primary);
+  color: var(--bg-primary);
+  border-color: var(--accent-primary);
+}
+
+
 /* ==== Responsive ==== */
 
 /* Tablets / portátiles pequeños */

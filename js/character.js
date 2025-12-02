@@ -320,7 +320,7 @@ function renderMemoryTab() {
 
       <div class="memory-bottom">
         <h5>Mejoras de Stats</h5>
-        <canvas id="memoryStatsChart"></canvas>
+        anvas id="memoryStatsChart"></canvas>
       </div>
     </div>
   `;
@@ -455,21 +455,47 @@ function renderBondsTab() {
     showBondDetails(characterBonds[0]);
   }
 
+  function renderBondAlineacion(bond, selectedLevel) {
+    let html = '';
+
+    // Header con icono si existe
+    html += `
+      <div class="bond-header">
+        ${bond.icon ? `<img src="${bond.icon}" alt="${bond.name} icon" class="bond-icon" />` : ''}
+        <h4 class="bond-title">${bond.name}</h4>
+      </div>
+      <p class="bond-subtitle">Efecto de la habilidad del vínculo</p>
+      <div class="bond-level-selector">
+        ${[1, 2, 3, 4, 5].map(n => `
+          <button class="bond-level-btn ${selectedLevel === n ? 'active' : ''}" data-level="${n}">
+            Nivel ${n}
+          </button>
+        `).join('')}
+      </div>
+    `;
+
+    const effect = bond.effects?.[String(selectedLevel)];
+    html += `
+      <p class="bond-level">
+        <strong>Nivel ${selectedLevel}:</strong> ${effect || 'Sin descripción disponible.'}
+      </p>
+    `;
+
+    detailsContainer.innerHTML = html;
+
+    detailsContainer.querySelectorAll('.bond-level-btn').forEach(btn => {
+      btn.addEventListener('click', () => {
+        const lvl = Number(btn.dataset.level);
+        renderBondAlineacion(bond, lvl);
+      });
+    });
+  }
+
   function showBondDetails(bond) {
     let html = '';
 
-    if (bond.type === 'alineacion' && bond.icon) {
-      html += `
-        <div class="bond-header">
-          <img src="${bond.icon}" alt="${bond.name} icon" class="bond-icon" />
-          <h4 class="bond-title">${bond.name}</h4>
-        </div>
-      `;
-    } else {
-      html += `<h4 class="bond-title">${bond.name}</h4>`;
-    }
-
     if (bond.type === 'bonus') {
+      html += `<h4 class="bond-title">${bond.name}</h4>`;
       html += '<p class="bond-subtitle">Ventaja de Atributos de Vínculo</p>';
       const myBonus = bond.bonuses?.[character.id];
       if (myBonus) {
@@ -479,17 +505,15 @@ function renderBondsTab() {
       } else {
         html += '<p class="bond-level">No hay bonificaciones disponibles</p>';
       }
+      detailsContainer.innerHTML = html;
     } else if (bond.type === 'alineacion') {
-      html += '<p class="bond-subtitle">Efecto de la habilidad del vínculo</p>';
-      for (let i = 1; i <= 5; i++) {
-        const effect = bond.effects?.[String(i)];
-        if (effect) {
-          html += `<p class="bond-level"><strong>Nivel ${i}:</strong> ${effect}</p>`;
-        }
-      }
+      // Solo esta clase de vínculos usa selector de nivel y una sola descripción
+      renderBondAlineacion(bond, 1);
+    } else {
+      // fallback por si aparece otro tipo
+      html += `<h4 class="bond-title">${bond.name}</h4>`;
+      detailsContainer.innerHTML = html;
     }
-
-    detailsContainer.innerHTML = html;
   }
 }
 
