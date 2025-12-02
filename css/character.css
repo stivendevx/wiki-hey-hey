@@ -579,12 +579,13 @@
 .grade-icon-btn {
   width: 56px;
   height: 56px;
+  overflow: hidden;
   background: var(--bg-card);
   border: 3px solid var(--border-color);
-  border-radius: var(--radius-sm);
+  border-radius: 50%;
   cursor: pointer;
   transition: var(--transition);
-  padding: 0.25rem;
+  padding: 0;
   display: flex;
   align-items: center;
   justify-content: center;

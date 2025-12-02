@@ -1,40 +1,75 @@
 [
   {
-    "id": "seijoh_powerhouse",
+    "id": "eternos-rivales",
     "type": "bonus",
-    "name": "Potencia de Seijoh",
-    "image": "images/bonds/seijoh_power.png",
-    "characters": ["oikawa-ur", "iwaizumi-ssr"],
+    "name": "Eternos Rivales",
+    "image": "images/bonds/eternos-rivales.png",
+    "characters": ["oikawa-ur"],
     "bonuses": {
       "oikawa-ur": {
-        "1": "Saque+5 Saque+1%",
-        "2": "Saque+8 Saque+2%",
-        "3": "Saque+12 Saque+3%",
-        "4": "Saque+15 Saque+4%",
-        "5": "Saque+20 Saque+5%"
-      },
-      "iwaizumi-ssr": {
-        "1": "Ataque Poderoso+5 Ataque+1%",
-        "2": "Ataque Poderoso+8 Ataque+2%",
-        "3": "Ataque Poderoso+12 Ataque+3%",
-        "4": "Ataque Poderoso+15 Ataque+4%",
-        "5": "Ataque Poderoso+20 Ataque+5%"
+        "1": "Colocación+5 Colocación+1%",
+        "2": "Colocación+7 Colocación+2%",
+        "3": "Colocación+9 Colocación+3%",
+        "4": "Colocación+12 Colocación+4%",
+        "5": "Colocación+15 Colocación+5%"
       }
     }
   },
+
   {
-    "id": "setter_rivals",
+    "id": "poder-confianza",
+    "type": "bonus",
+    "name": "El Poder de la Confianza",
+    "image": "images/bonds/poder-confianza.png",
+    "characters": ["oikawa-ur", "kentaro-ssr"],
+    "bonuses": {
+      "oikawa-ur": {
+        "1": "Bloqueo+5 Bloqueo+1%",
+        "2": "Bloqueo+7 Bloqueo+2%",
+        "3": "Bloqueo+9 Bloqueo+3%",
+        "4": "Bloqueo+12 Bloqueo+4%",
+        "5": "Bloqueo+15 Bloqueo+5%"
+      },
+      "kentaro-ssr": {
+        "1": "Ataque poderos+5 Ataque Poderoso+1%",
+        "2": "Ataque poderos+7 Ataque Poderoso+2%",
+        "3": "Ataque poderos+9 Ataque Poderoso+3%",
+        "4": "Ataque poderos+12 Ataque Poderoso+4%",
+        "5": "Ataque poderos+15 Ataque Poderoso+5%"
+      }
+    }
+  },
+
+  {
+    "id": "mas-alto",
+    "type": "bonus",
+    "name": "¡Más Alto!",
+    "image": "images/bonds/mas-alto.png",
+    "characters": ["oikawa-ur"],
+    "bonuses": {
+      "oikawa-ur": {
+        "1": "Colocación+5 Colocación+1%",
+        "2": "Colocación+7 Colocación+2%",
+        "3": "Colocación+9 Colocación+3%",
+        "4": "Colocación+12 Colocación+4%",
+        "5": "Colocación+15 Colocación+5%"
+      }
+    }
+  },
+
+  {
+    "id": "quimica-perfecta",
     "type": "alineacion",
-    "name": "Rivalidad de Armadores",
-    "image": "images/bonds/setter_rivals.png",
-    "icon": "images/bonds/setter_rivals_icon.png",
-    "characters": ["oikawa-ur", "kageyama-ur"],
+    "name": "Química Perfecta",
+    "image": "images/bonds/quimica-perfecta.png",
+    "icon": "images/bonds/quimica-perfecta-icon.png",
+    "characters": ["oikawa-ur", "iwaizumi-ssr"],
     "effects": {
-      "1": "Aumenta la Técnica ofensiva de ambos armadores en un 3%",
-      "2": "Aumenta la Técnica ofensiva de ambos armadores en un 5%",
-      "3": "Aumenta la Técnica ofensiva de ambos armadores en un 7%",
-      "4": "Aumenta la Técnica ofensiva de ambos armadores en un 10%",
-      "5": "Aumenta la Técnica ofensiva de ambos armadores en un 15% y reduce cooldown de definitivas"
+      "1":"TORU OIKAWA ejecuta un pase, HAJIME IWAIZUMU ejecuta un Remate poderoso con un poder equivalente al 255% del atributo Poderoso, y tu equipo recibe 2 acumulaciones de la ventaja [Ritmo de Ataque]. Cada Acumulación de la ventaja [Ritmo de Ataque] aumenta la Percepción de los jugadores de tu equipo en un 1%, hasta 10 acumulaciones.",
+      "2":"TORU OIKAWA ejecuta un pase, HAJIME IWAIZUMU ejecuta un Remate poderoso con un poder equivalente al 270% del atributo Poderoso, y tu equipo recibe 2 acumulaciones de la ventaja [Ritmo de Ataque]. Cada Acumulación de la ventaja [Ritmo de Ataque] aumenta la Percepción de los jugadores de tu equipo en un 1%, hasta 10 acumulaciones.",
+      "3":"TORU OIKAWA ejecuta un pase, HAJIME IWAIZUMU ejecuta un Remate poderoso con un poder equivalente al 285% del atributo Poderoso, y tu equipo recibe 2 acumulaciones de la ventaja [Ritmo de Ataque]. Cada Acumulación de la ventaja [Ritmo de Ataque] aumenta la Percepción de los jugadores de tu equipo en un 1%, hasta 10 acumulaciones.",
+      "4":"TORU OIKAWA ejecuta un pase, HAJIME IWAIZUMU ejecuta un Remate poderoso con un poder equivalente al 300% del atributo Poderoso, y tu equipo recibe 2 acumulaciones de la ventaja [Ritmo de Ataque]. Cada Acumulación de la ventaja [Ritmo de Ataque] aumenta la Percepción de los jugadores de tu equipo en un 1%, hasta 10 acumulaciones.",
+      "5":"TORU OIKAWA ejecuta un pase, HAJIME IWAIZUMU ejecuta un Remate poderoso con un poder equivalente al 315% del atributo Poderoso, y tu equipo recibe 2 acumulaciones de la ventaja [Ritmo de Ataque]. Cada Acumulación de la ventaja [Ritmo de Ataque] aumenta la Percepción de los jugadores de tu equipo en un 1%, hasta 10 acumulaciones."
     }
   }
 ]

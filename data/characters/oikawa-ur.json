@@ -41,8 +41,8 @@
       "max_level": 3,
       "descriptions": {
         "1": "TORU OIKAWA ejecuta un pase con un poder equivalente al 120% del atributo Pase. Si los jugadores de tu equipo logran un resultado crítico, recibe 1 acumulaciones de la ventaja [Ritmo de Ataque]. Cada acumulación de esta ventaja aumenta la Percepción de los jugadores de tu equipo en un 1%. Puede acumularse hasta 10 veces.",
-        "2": "TORU OIKAWA ejecuta un pase con un poder equivalente al 120% del atributo Pase. Si los jugadores de tu equipo logran un resultado crítico, recibe 1 acumulaciones de la ventaja [Ritmo de Ataque]. Cada acumulación de esta ventaja aumenta la Percepción de los jugadores de tu equipo en un 1%. Puede acumularse hasta 10 veces.",
-        "3": "TORU OIKAWA ejecuta un pase con un poder equivalente al 120% del atributo Pase. Si los jugadores de tu equipo logran un resultado crítico, recibe 1 acumulaciones de la ventaja [Ritmo de Ataque]. Cada acumulación de esta ventaja aumenta la Percepción de los jugadores de tu equipo en un 1%. Puede acumularse hasta 10 veces."
+        "2": "TORU OIKAWA ejecuta un pase con un poder equivalente al 135% del atributo Pase. Si los jugadores de tu equipo logran un resultado crítico, recibe 1 acumulaciones de la ventaja [Ritmo de Ataque]. Cada acumulación de esta ventaja aumenta la Percepción de los jugadores de tu equipo en un 1%. Puede acumularse hasta 10 veces.",
+        "3": "TORU OIKAWA ejecuta un pase con un poder equivalente al 150% del atributo Pase. Si los jugadores de tu equipo logran un resultado crítico, recibe 1 acumulaciones de la ventaja [Ritmo de Ataque]. Cada acumulación de esta ventaja aumenta la Percepción de los jugadores de tu equipo en un 1%. Puede acumularse hasta 10 veces."
       }
     },
     {
@@ -55,8 +55,8 @@
       "max_level": 3,
       "descriptions": {
         "1": "TORU OIKAWA ejecuta una finta de colocador imbloqueable con un poder equivalente al 115% del atributo Pase. Si OIKAWA está presente, aumenta en un 20% la Fuerza de los jugadores de tipo Poder en tu equipo.",
-        "2": "TORU OIKAWA ejecuta una finta de colocador imbloqueable con un poder equivalente al 115% del atributo Pase. Si OIKAWA está presente, aumenta en un 20% la Fuerza de los jugadores de tipo Poder en tu equipo.",
-        "3": "TORU OIKAWA ejecuta una finta de colocador imbloqueable con un poder equivalente al 115% del atributo Pase. Si OIKAWA está presente, aumenta en un 20% la Fuerza de los jugadores de tipo Poder en tu equipo."
+        "2": "TORU OIKAWA ejecuta una finta de colocador imbloqueable con un poder equivalente al 139% del atributo Pase. Si OIKAWA está presente, aumenta en un 20% la Fuerza de los jugadores de tipo Poder en tu equipo.",
+        "3": "TORU OIKAWA ejecuta una finta de colocador imbloqueable con un poder equivalente al 145% del atributo Pase. Si OIKAWA está presente, aumenta en un 20% la Fuerza de los jugadores de tipo Poder en tu equipo."
       }
     },
     {
@@ -69,8 +69,8 @@
       "max_level": 3,
       "descriptions": {
         "1": "si TORU OIKAWA está presente, aumenta la Percepción de los jugadores de tu equipo en un 10%. Cuando un jugador de tu equipo use la habilidad Remate poderoso, usará 6 acumulaciones de la ventaja [Ritmo de Ataque] para garantizar que este remate sea crítico.",
-        "2": "si TORU OIKAWA está presente, aumenta la Percepción de los jugadores de tu equipo en un 10%. Cuando un jugador de tu equipo use la habilidad Remate poderoso, usará 6 acumulaciones de la ventaja [Ritmo de Ataque] para garantizar que este remate sea crítico.",
-        "3": "si TORU OIKAWA está presente, aumenta la Percepción de los jugadores de tu equipo en un 10%. Cuando un jugador de tu equipo use la habilidad Remate poderoso, usará 6 acumulaciones de la ventaja [Ritmo de Ataque] para garantizar que este remate sea crítico."
+        "2": "si TORU OIKAWA está presente, aumenta la Percepción de los jugadores de tu equipo en un 14%. Cuando un jugador de tu equipo use la habilidad Remate poderoso, usará 6 acumulaciones de la ventaja [Ritmo de Ataque] para garantizar que este remate sea crítico.",
+        "3": "si TORU OIKAWA está presente, aumenta la Percepción de los jugadores de tu equipo en un 18%. Cuando un jugador de tu equipo use la habilidad Remate poderoso, usará 6 acumulaciones de la ventaja [Ritmo de Ataque] para garantizar que este remate sea crítico."
       }
     },
     {
@@ -83,10 +83,10 @@
       "max_level": 5,
       "descriptions": {
         "1": "TORU OIKAWA ejecuta un Saque con Salto Poderoso con un poder equivalente al 260% del atributo Saque. Para este saque, OIKAWA aumenta en un 20% su atributo Percepción y en un 20% su atributo Fuerza.",
-        "2": "TORU OIKAWA ejecuta un Saque con Salto Poderoso con un poder equivalente al 260% del atributo Saque. Para este saque, OIKAWA aumenta en un 20% su atributo Percepción y en un 20% su atributo Fuerza.",
-        "3": "TORU OIKAWA ejecuta un Saque con Salto Poderoso con un poder equivalente al 260% del atributo Saque. Para este saque, OIKAWA aumenta en un 20% su atributo Percepción y en un 20% su atributo Fuerza.",
-        "4": "TORU OIKAWA ejecuta un Saque con Salto Poderoso con un poder equivalente al 260% del atributo Saque. Para este saque, OIKAWA aumenta en un 20% su atributo Percepción y en un 20% su atributo Fuerza.",
-        "5": "TORU OIKAWA ejecuta un Saque con Salto Poderoso con un poder equivalente al 260% del atributo Saque. Para este saque, OIKAWA aumenta en un 20% su atributo Percepción y en un 20% su atributo Fuerza."
+        "2": "TORU OIKAWA ejecuta un Saque con Salto Poderoso con un poder equivalente al 275% del atributo Saque. Para este saque, OIKAWA aumenta en un 20% su atributo Percepción y en un 20% su atributo Fuerza.",
+        "3": "TORU OIKAWA ejecuta un Saque con Salto Poderoso con un poder equivalente al 290% del atributo Saque. Para este saque, OIKAWA aumenta en un 20% su atributo Percepción y en un 20% su atributo Fuerza.",
+        "4": "TORU OIKAWA ejecuta un Saque con Salto Poderoso con un poder equivalente al 305% del atributo Saque. Para este saque, OIKAWA aumenta en un 20% su atributo Percepción y en un 20% su atributo Fuerza.",
+        "5": "TORU OIKAWA ejecuta un Saque con Salto Poderoso con un poder equivalente al 320% del atributo Saque. Para este saque, OIKAWA aumenta en un 20% su atributo Percepción y en un 20% su atributo Fuerza."
       }
     }
   ],
@@ -104,24 +104,26 @@
       "remate": 570
     },
     "exclusive_effects": {
-      "I": "Mientras el portador está en la cancha, cuando 'Ritmo de Ataque' de tu equipo alcanza 6 acumulaciones, los atributos Fuerza y Espíritu de tus jugadores aumentan en un 2%; se acumula hasta 3 veces.",
-      "II": "Mientras el portador está en la cancha, cuando 'Ritmo de Ataque' de tu equipo alcanza 6 acumulaciones, los atributos Fuerza y Espíritu de tus jugadores aumentan en un 2%; se acumula hasta 3 veces.",
-      "III": "Mientras el portador está en la cancha, cuando 'Ritmo de Ataque' de tu equipo alcanza 6 acumulaciones, los atributos Fuerza y Espíritu de tus jugadores aumentan en un 2%; se acumula hasta 3 veces.",
-      "IV": "Mientras el portador está en la cancha, cuando 'Ritmo de Ataque' de tu equipo alcanza 6 acumulaciones, los atributos Fuerza y Espíritu de tus jugadores aumentan en un 2%; se acumula hasta 3 veces.",
-      "V": "Mientras el portador está en la cancha, cuando 'Ritmo de Ataque' de tu equipo alcanza 6 acumulaciones, los atributos Fuerza y Espíritu de tus jugadores aumentan en un 2%; se acumula hasta 3 veces."
+      "I": "Aumenta el atributo Saque del portador en un 12%. Cuando el portador ejecuta un saque crítico, obtiene 2 acumulación(es) de 'Ritmo de Ataque'. Cada Acumulación aumenta la Percepcion de los jugadores de tu equipo en un 1%; se acumula hasta 10 veces. Si el saque marca, el portador obtiene 4 acumulación(es) más de 'Ritmo de Ataque'. Mientras el portador está en la cancha, cuando 'Ritmo de Ataque' de tu equipo alcanza 6 acumulaciones, los atributos Fuerza y Espíritu de tus jugadores aumentan en un 2%; se acumula hasta 3 veces.",
+      "II": "Sin información del grado II de este recuerdo.",
+      "III": "Sin Información del grado III de este recuerdo.",
+      "IV": "Sin Información del grado IV de este Recuerdo.",
+      "V": "Aumenta el atributo Saque del portador en un 24%. Cuando el portador ejecuta un saque crítico, obtiene 2 acumulación(es) de 'Ritmo de Ataque'. Cada Acumulación aumenta la Percepcion de los jugadores de tu equipo en un 4%; se acumula hasta 10 veces. Si el saque marca, el portador obtiene 4 acumulación(es) más de 'Ritmo de Ataque'. Mientras el portador está en la cancha, cuando 'Ritmo de Ataque' de tu equipo alcanza 6 acumulaciones, los atributos Fuerza y Espíritu de tus jugadores aumentan en un 2%; se acumula hasta 3 veces."
     }
   },
   
   "resonances": {
-    "I": "Aumenta la moral del equipo cuando Oikawa realiza un armado exitoso bajo presión.",
-    "II": "Los saques de Oikawa tienen un 10% de probabilidad de romper completamente la formación rival.",
-    "III": "Cuando el equipo está perdiendo, Oikawa obtiene +20 en Colocación y Saque.",
-    "IV": "Los armados de Oikawa hacia el as del equipo tienen un 30% más de efectividad.",
-    "V": "Inspiración del capitán: Todo el equipo obtiene +15 en todas las stats ofensivas durante 2 turnos después de un punto crucial."
+    "I": "Aumenta los atributos básicos en un 13%.",
+    "II": "El atributo Saque de TORU OIKAWA aumenta un 18%. Cuando se consume 'Ritmo de Ataque', el atributo Ataque poderoso de tus jugadores aumenta un 5% por acumulación, hasta un máximo de 5 acumulaciones.",
+    "III": "Aumenta los atributos básicos en un 13%.",
+    "IV": "Cuando saca TORU OIKAWA, aumenta la Percepción en un 15%, para los jugadores de tu equipo; esto dura 3 cruces de red. Si tu equipo anota antes de los 2 cruces de red después del saque de TORU OIKAWA, se restablece la recarga de SAQUE CON SALTO DEL GRAN REY.",
+    "V": "Aumenta los atributos básicos en un 13%."
   },
   
   "bonds": [
-    "setter-rivals",
-    "aoba-johsai-ace-setter"
+    "eternos-rivales",
+    "poder-confianza",
+    "quimica-perfecta",
+    "mas-alto"
   ]
 }

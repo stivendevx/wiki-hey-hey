@@ -265,11 +265,11 @@ function renderMemoryTab() {
   const pos = positions.find(p => p.id === character.position);
 
   const gradeIcons = {
-    'I': 'images/grades/grade-1.png',
-    'II': 'images/grades/grade-2.png',
-    'III': 'images/grades/grade-3.png',
-    'IV': 'images/grades/grade-4.png',
-    'V': 'images/grades/grade-5.png'
+    'I': 'images/icons/memory-grades/grade-1.png',
+    'II': 'images/icons/memory-grades/grade-2.png',
+    'III': 'images/icons/memory-grades/grade-3.png',
+    'IV': 'images/icons/memory-grades/grade-4.png',
+    'V': 'images/icons/memory-grades/grade-5.png'
   };
 
   const memoryHTML = `
