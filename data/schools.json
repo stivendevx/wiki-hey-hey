@@ -1,3 +1,4 @@
+
 [
   {
     "id": "aoba-johsai",
@@ -40,5 +41,9 @@
     "name": "Instituto Técnico Date",
     "icon": "images/icons/schools/date-tech.png",
     "school_bond": "El muro de hierro. Aumenta significativamente las capacidades de bloqueo de todo el equipo."
+  },
+  {
+    "id":"itachiyama",
+    "name": "Instituto Itachiyama"
   }
 ]

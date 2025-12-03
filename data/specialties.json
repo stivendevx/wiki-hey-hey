@@ -27,7 +27,7 @@
   {
     "id": "recepcion",
     "name": "Recepción",
-    "icon": "images/icons/specialties/reception.png",
+    "icon": "images/icons/specialties/recepcion.png",
     "descriptions": {
       "default": "Capacidad para recibir saques y defender el campo, manteniendo el balón en juego.",
       "setter": "Como armador, recepción secundaria para mantener el juego fluido cuando el libero no puede alcanzar el balón."

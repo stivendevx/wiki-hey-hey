@@ -1,17 +1,16 @@
 {
-  "id": "oikawa-ur",
-  "name": "Oikawa Tōru",
-  "name_kanji": "及川徹",
+  "id": "komori-ur",
+  "name": "Motoya Komori",
+  "name_kanji": "古森 元也",
   "rarity": "ur",
-  "id_school": "aoba-johsai",
-  "position": "s",
-  "image_card": "images/characters/cards/oikawa-ur-card.png",
-  "image_profile": "images/characters/profiles/oikawa-ur-profile.png",
+  "id_school": "itachiyama",
+  "position": "li",
+  "image_card": "images/characters/cards/komori-ur-card.png",
+  "image_profile": "images/characters/profiles/komori-ur-profile.png",
   
   "specialties": [
-    "colocador",
-    "saque",
-    "atq-poderoso"
+    "recepcion",
+    "colocador"
   ],
   
   "stats": {
@@ -26,26 +25,25 @@
   
   "abilities": [
     {
-      "id": "oikawa-ur-h1",
-      "name": "COLOCACIÓN DEL GRAN REY",
-      "name_es": "COLOCACIÓN DEL GRAN REY",
+      "id": "komori-ur-h1",
+      "name_es": "EL JUGADOR CLAVE DEL EQUIPO",
       "type": "passive",
-      "tags": ["Pasiva", "Colocacción", "Ritmo de Ataque"],
-      "icon": "images/abilities/oikawa-ur/oikawa-ur-ability-1.png",
+      "tags": ["Pasiva", "Mejora de aliados", "Aumento de Párametros"],
+      "icon": "images/abilities/komori-ur/komori-ur-ability-1.png",
       "max_level": 3,
       "descriptions": {
-        "1": "TORU OIKAWA ejecuta un pase con un poder equivalente al 120% del atributo Pase. Si los jugadores de tu equipo logran un resultado crítico, recibe 1 acumulaciones de la ventaja [Ritmo de Ataque]. Cada acumulación de esta ventaja aumenta la Percepción de los jugadores de tu equipo en un 1%. Puede acumularse hasta 10 veces.",
-        "2": "TORU OIKAWA ejecuta un pase con un poder equivalente al 135% del atributo Pase. Si los jugadores de tu equipo logran un resultado crítico, recibe 1 acumulaciones de la ventaja [Ritmo de Ataque]. Cada acumulación de esta ventaja aumenta la Percepción de los jugadores de tu equipo en un 1%. Puede acumularse hasta 10 veces.",
-        "3": "TORU OIKAWA ejecuta un pase con un poder equivalente al 150% del atributo Pase. Si los jugadores de tu equipo logran un resultado crítico, recibe 1 acumulaciones de la ventaja [Ritmo de Ataque]. Cada acumulación de esta ventaja aumenta la Percepción de los jugadores de tu equipo en un 1%. Puede acumularse hasta 10 veces."
+        "1": "Si MOTOYA KOMORI está en la cancha, los jugadores de la línea trasera de tu equipo obtienen un 10% adicional en Técnica Defensiva. Al inicio de cada rally, MOTOYA KOMORI recibe 6 acumulaciones de la ventaja [Conectar la Siguiente Jugada]. Cada acumulación de esta ventaja aumenta el atributo Pase en un 3% y la Reacción en un 5%. Puede acumularse hasta 10 veces.",
+        "2": "Si MOTOYA KOMORI está en la cancha, los jugadores de la línea trasera de tu equipo obtienen un 10% adicional en Técnica Defensiva. Al inicio de cada rally, MOTOYA KOMORI recibe 6 acumulaciones de la ventaja [Conectar la Siguiente Jugada]. Cada acumulación de esta ventaja aumenta el atributo Pase en un 3% y la Reacción en un 5%. Puede acumularse hasta 10 veces.",
+        "3": "Si MOTOYA KOMORI está en la cancha, los jugadores de la línea trasera de tu equipo obtienen un 10% adicional en Técnica Defensiva. Al inicio de cada rally, MOTOYA KOMORI recibe 6 acumulaciones de la ventaja [Conectar la Siguiente Jugada]. Cada acumulación de esta ventaja aumenta el atributo Pase en un 3% y la Reacción en un 5%. Puede acumularse hasta 10 veces."
       }
     },
     {
-      "id": "oikawa-ur-h2",
+      "id": "komori-ur-h2",
       "name": "ANALISTA DE LA CANCHA",
       "name_es": "ANALISTA DE LA CANCHA",
       "type": "passive",
       "tags": ["Pasiva", "Finta de Colocador", "Interrupción de Bloqueo"],
-      "icon": "images/abilities/oikawa-ur/oikawa-ur-ability-2.png",
+      "icon": "images/abilities/komori-ur/komori-ur-ability-2.png",
       "max_level": 3,
       "descriptions": {
         "1": "TORU OIKAWA ejecuta una finta de colocador imbloqueable con un poder equivalente al 115% del atributo Pase. Si OIKAWA está presente, aumenta en un 20% la Fuerza de los jugadores de tipo Poder en tu equipo.",
@@ -54,12 +52,12 @@
       }
     },
     {
-      "id": "oikawa-ur-h3",
+      "id": "komori-ur-h3",
       "name": "LÍDER DE LA CANCHA",
       "name_es": "LÍDER DE LA CANCHA",
       "type": "passive",
       "tags": ["Pasiva", "Aumento de Percepción"],
-      "icon": "images/abilities/oikawa-ur/oikawa-ur-ability-3.png",
+      "icon": "images/abilities/komori-ur/komori-ur-ability-1.png",
       "max_level": 3,
       "descriptions": {
         "1": "si TORU OIKAWA está presente, aumenta la Percepción de los jugadores de tu equipo en un 10%. Cuando un jugador de tu equipo use la habilidad Remate poderoso, usará 6 acumulaciones de la ventaja [Ritmo de Ataque] para garantizar que este remate sea crítico.",
@@ -68,12 +66,12 @@
       }
     },
     {
-      "id": "oikawa-ur-h4",
+      "id": "komori-ur-h4",
       "name": "SAQUE CON SALTO DEL GRAN REY",
       "name_es": "SAQUE CON SALTO DEL GRAN REY",
       "type": "ultimate",
       "tags": ["Definitiva", "Pasiva", "Saque", "Bonificación de atributo"],
-      "icon": "images/abilities/oikawa-ur/oikawa-ur-ability-4.png",
+      "icon": "images/abilities/komori-ur/komori-ur-ability-4.png",
       "max_level": 5,
       "descriptions": {
         "1": "TORU OIKAWA ejecuta un Saque con Salto Poderoso con un poder equivalente al 260% del atributo Saque. Para este saque, OIKAWA aumenta en un 20% su atributo Percepción y en un 20% su atributo Fuerza.",
@@ -86,8 +84,8 @@
   ],
   
   "memory": {
-    "name": "Potenciación de Saque: TORU OIKAWA",
-    "image": "images/memories/oikawa-ur-memory.png",
+    "name": "Mejora de Defensa y Ofensiva: KOMORI MOTOYA",
+    "image": "images/memories/komori-ur-memory.png",
     "level": 80,
     "stats_boost": {
       "colocacion": 729,
@@ -98,11 +96,11 @@
       "remate": 570
     },
     "exclusive_effects": {
-      "I": "Aumenta el atributo Saque del portador en un 12%. Cuando el portador ejecuta un saque crítico, obtiene 2 acumulación(es) de 'Ritmo de Ataque'. Cada Acumulación aumenta la Percepcion de los jugadores de tu equipo en un 1%; se acumula hasta 10 veces. Si el saque marca, el portador obtiene 4 acumulación(es) más de 'Ritmo de Ataque'. Mientras el portador está en la cancha, cuando 'Ritmo de Ataque' de tu equipo alcanza 6 acumulaciones, los atributos Fuerza y Espíritu de tus jugadores aumentan en un 2%; se acumula hasta 3 veces.",
+      "I": "Aumenta la Recepción del miembro que tiene esta Memoria equipada en un 12%. Cuando el miembro realiza una recepción, la Técnica Defensiva de los aliados en la zona de la retaguardia aumenta en un 2%. (Máximo 3 Acumulaciones). Si el miembro está en la cancha, al activarse la Habilidad de Recepción de un aliado la Estamina del miembro que recibe se recupera en 2 puntos, el atributo Ataque Poderoso / Rápido del miembro que recibe aumenta en un 15%. Este último efecto persiste hasta que el balón cruce la red 2 veces.",
       "II": "Sin información del grado II de este recuerdo.",
       "III": "Sin Información del grado III de este recuerdo.",
       "IV": "Sin Información del grado IV de este Recuerdo.",
-      "V": "Aumenta el atributo Saque del portador en un 24%. Cuando el portador ejecuta un saque crítico, obtiene 2 acumulación(es) de 'Ritmo de Ataque'. Cada Acumulación aumenta la Percepcion de los jugadores de tu equipo en un 4%; se acumula hasta 10 veces. Si el saque marca, el portador obtiene 4 acumulación(es) más de 'Ritmo de Ataque'. Mientras el portador está en la cancha, cuando 'Ritmo de Ataque' de tu equipo alcanza 6 acumulaciones, los atributos Fuerza y Espíritu de tus jugadores aumentan en un 2%; se acumula hasta 3 veces."
+      "V": "Aumenta la Recepción del miembro que tiene esta Memoria equipada en un 12%. Cuando el miembro realiza una recepción, la Técnica Defensiva de los aliados en la zona de la retaguardia aumenta en un 2%. (Máximo 3 Acumulaciones). Si el miembro está en la cancha, al activarse la Habilidad de Recepción de un aliado la Estamina del miembro que recibe se recupera en 2 puntos, el atributo Ataque Poderoso / Rápido del miembro que recibe aumenta en un 15%. Este último efecto persiste hasta que el balón cruce la red 2 veces."
     }
   },
   

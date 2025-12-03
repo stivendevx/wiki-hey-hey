@@ -1,0 +1,117 @@
+{
+  "id": "hinata-ssr",
+  "name": "Shōyō Hinata",
+  "name_kanji": "日向翔陽",
+  "rarity": "ssr",
+  "id_school": "karasuno",
+  "position": "mb",
+  "image_card": "images/characters/cards/hinata-ssr-card.png",
+  "image_profile": "images/characters/profiles/hinata-ssr-profile.png",
+  
+  "specialties": [
+    "atq-rapido"
+  ],
+  
+  "stats": {
+    "colocacion": 1118,
+    "saque": 1173,
+    "recuperacion": 1253,
+    "bloqueo": 1250,
+    "recepcion": 1195,
+    "ataque_rapido": 1383,
+    "ataque_poderoso": 284
+  },
+  
+  "abilities": [
+    {
+      "id": "hinata-ssr-h1",
+      "name_es": "EL MEJOR SEÑUELO",
+      "type": "passive",
+      "tags": ["Pasiva", "Optimizar equipo"],
+      "icon": "images/abilities/hinata-ssr/hinata-ssr-ability-1.png",
+      "max_level": 3,
+      "descriptions": {
+        "1": "si SHOYO HINATA está presente, aumenta en un 7% el atributo Ataque rápido/poderoso de los jugadores de tu equipo.",
+        "2": "si SHOYO HINATA está presente, aumenta en un 10% el atributo Ataque rápido/poderoso de los jugadores de tu equipo.",
+        "3": "si SHOYO HINATA está presente, aumenta en un 13% el atributo Ataque rápido/poderoso de los jugadores de tu equipo."
+      }
+    },
+    {
+      "id": "hinata-ssr-h2",
+      "name_es": "GOLPE TÁNDEM LETAL",
+      "type": "passive",
+      "tags": ["Pasiva", "Potenciación de Remate Rápido"],
+      "icon": "images/abilities/hinata-ssr/hinata-ssr-ability-2.png",
+      "max_level": 3,
+      "descriptions": {
+        "1": "SHOYO HINATA ejecuta un Remate rápido y el jugador que le pasa el balón es de tipo Ataque rápido. El poder de este remate aumenta en un equivalente al 15% del atributo Ataque rápido de ese jugador.",
+        "2": "SHOYO HINATA ejecuta un Remate rápido y el jugador que le pasa el balón es de tipo Ataque rápido. El poder de este remate aumenta en un equivalente al 17% del atributo Ataque rápido de ese jugador.",
+        "3": "SHOYO HINATA ejecuta un Remate rápido y el jugador que le pasa el balón es de tipo Ataque rápido. El poder de este remate aumenta en un equivalente al 19% del atributo Ataque rápido de ese jugador."
+      }
+    },
+    {
+      "id": "hinata-ssr-h3",
+      "name_es": "FUSIÓN CON EL BALÓN",
+      "type": "passive",
+      "tags": ["Pasiva", "Probabilidad de Activación"],
+      "icon": "images/abilities/hinata-ssr/hinata-ssr-ability-3.png",
+      "max_level": 3,
+      "descriptions": {
+        "1": "Aumenta la Percepción de SHOYO HINATA en un 6%. Si HINATA ejecuta una jugada crítica, aumenta la Percepción en un 4% adicional. Puede acumularse hasta 1 vez.",
+        "2": "Aumenta la Percepción de SHOYO HINATA en un 7%. Si HINATA ejecuta una jugada crítica, aumenta la Percepción en un 4% adicional. Puede acumularse hasta 1 vez.",
+        "3": "Aumenta la Percepción de SHOYO HINATA en un 7%. Si HINATA ejecuta una jugada crítica, aumenta la Percepción en un 5% adicional. Puede acumularse hasta 1 vez."
+      }
+    },
+    {
+      "id": "hinata-ssr-h4",
+      "name_es": "",
+      "type": "ultimate",
+      "tags": ["Definitiva", "Activa", "Ataque Rápido", "Aumento de Poder Crítico."],
+      "icon": "images/abilities/hinata-ssr/hinta-ssr-ability-4.png",
+      "max_level": 5,
+      "descriptions": {
+        "1": "SHOYO HINATA ejecuta un Remate Rápido con un poder equivalente al 235% del atributo Ataque Rápido. Cuando este remate consigue un resultado SUPERIOR, su poder aumenta en un valor equivalente al 20% del atributo Ataque Rápido.",
+        "2": "SHOYO HINATA ejecuta un Remate Rápido con un poder equivalente al 250% del atributo Ataque Rápido. Cuando este remate consigue un resultado SUPERIOR, su poder aumenta en un valor equivalente al 20% del atributo Ataque Rápido.",
+        "3": "SHOYO HINATA ejecuta un Remate Rápido con un poder equivalente al 265% del atributo Ataque Rápido. Cuando este remate consigue un resultado SUPERIOR, su poder aumenta en un valor equivalente al 20% del atributo Ataque Rápido.",
+        "4": "SHOYO HINATA ejecuta un Remate Rápido con un poder equivalente al 280% del atributo Ataque Rápido. Cuando este remate consigue un resultado SUPERIOR, su poder aumenta en un valor equivalente al 20% del atributo Ataque Rápido.",
+        "5": "SHOYO HINATA ejecuta un Remate Rápido con un poder equivalente al 295% del atributo Ataque Rápido. Cuando este remate consigue un resultado SUPERIOR, su poder aumenta en un valor equivalente al 20% del atributo Ataque Rápido."
+      }
+    }
+  ],
+  
+  "memory": {
+    "name": "",
+    "image": "images/memories/komori-ur-memory.png",
+    "level": 80,
+    "stats_boost": {
+      "colocacion": 729,
+      "saque": 729,
+      "recuperacion": 507,
+      "bloqueo": 665,
+      "recepcion": 539,
+      "remate": 570
+    },
+    "exclusive_effects": {
+      "I": "Aumenta la Recepción del miembro que tiene esta Memoria equipada en un 12%. Cuando el miembro realiza una recepción, la Técnica Defensiva de los aliados en la zona de la retaguardia aumenta en un 2%. (Máximo 3 Acumulaciones). Si el miembro está en la cancha, al activarse la Habilidad de Recepción de un aliado la Estamina del miembro que recibe se recupera en 2 puntos, el atributo Ataque Poderoso / Rápido del miembro que recibe aumenta en un 15%. Este último efecto persiste hasta que el balón cruce la red 2 veces.",
+      "II": "Sin información del grado II de este recuerdo.",
+      "III": "Sin Información del grado III de este recuerdo.",
+      "IV": "Sin Información del grado IV de este Recuerdo.",
+      "V": "Aumenta la Recepción del miembro que tiene esta Memoria equipada en un 12%. Cuando el miembro realiza una recepción, la Técnica Defensiva de los aliados en la zona de la retaguardia aumenta en un 2%. (Máximo 3 Acumulaciones). Si el miembro está en la cancha, al activarse la Habilidad de Recepción de un aliado la Estamina del miembro que recibe se recupera en 2 puntos, el atributo Ataque Poderoso / Rápido del miembro que recibe aumenta en un 15%. Este último efecto persiste hasta que el balón cruce la red 2 veces."
+    }
+  },
+  
+  "resonances": {
+    "I": "Aumenta los atributos básicos en un 13%.",
+    "II": "El atributo Saque de TORU OIKAWA aumenta un 18%. Cuando se consume 'Ritmo de Ataque', el atributo Ataque poderoso de tus jugadores aumenta un 5% por acumulación, hasta un máximo de 5 acumulaciones.",
+    "III": "Aumenta los atributos básicos en un 13%.",
+    "IV": "Cuando saca TORU OIKAWA, aumenta la Percepción en un 15%, para los jugadores de tu equipo; esto dura 3 cruces de red. Si tu equipo anota antes de los 2 cruces de red después del saque de TORU OIKAWA, se restablece la recarga de SAQUE CON SALTO DEL GRAN REY.",
+    "V": "Aumenta los atributos básicos en un 13%."
+  },
+  
+  "bonds": [
+    "eternos-rivales",
+    "poder-confianza",
+    "quimica-perfecta",
+    "mas-alto"
+  ]
+}

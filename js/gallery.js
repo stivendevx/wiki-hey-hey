@@ -30,7 +30,7 @@ async function init() {
       'data/specialties.json'
     ]);
 
-    // Cargar personajes
+    // Cargar personajes desde un list-json
     await loadCharacters();
 
     // Poblar filtros
@@ -46,14 +46,18 @@ async function init() {
   }
 }
 
-// Cargar todos los personajes
+// Cargar todos los personajes usando un list-json
 async function loadCharacters() {
-  // Aquí agregas todos los IDs de personajes que tengas
-  const characterIds = ['oikawa-ur'];
+  // Leer la lista de ids desde data/character-list.json
+  const list = await loadJSON('data/character-list.json');
+  const characterIds = (list && Array.isArray(list.characters)) ? list.characters : [];
 
+  // Cargar cada JSON individual de personaje
   const promises = characterIds.map(id => loadJSON(`data/characters/${id}.json`));
   const characters = await Promise.all(promises);
-  allCharacters = characters.filter(c => c); // quitar null
+
+  // Guardar solo los personajes válidos
+  allCharacters = characters.filter(c => c);
 }
 
 // Poblar selects de filtros
