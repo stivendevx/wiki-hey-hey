@@ -6,7 +6,7 @@
   "id_school": "karasuno",
   "position": "s",
   "image_card": "images/characters/cards/tobio-ur-card.png",
-  "image_profile": "images/characters/profiles/oikawa-ur-profile.png",
+  "image_profile": "images/characters/profiles/tobio-ur-profile.png",
   
   "specialties": [
     "colocador",
@@ -15,13 +15,13 @@
   ],
   
   "stats": {
-    "colocacion": 1627,
+    "colocacion": 2043,
     "saque": 1705,
     "recuperacion": 1290,
     "bloqueo": 1530,
     "recepcion": 1378,
-    "ataque_rapido": 212,
-    "ataque_poderoso": 1533
+    "ataque_rapido": 1680,
+    "ataque_poderoso": 237
   },
   
   "abilities": [

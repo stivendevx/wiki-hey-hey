@@ -44,6 +44,8 @@
   },
   {
     "id":"itachiyama",
-    "name": "Instituto Itachiyama"
+    "name": "Instituto Itachiyama",
+    "icon": "images/icons/schools/itachiyama.png",
+    "school_bond":"Sin vinculo de escuela."
   }
 ]

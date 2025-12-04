@@ -1,0 +1,116 @@
+{
+  "id": "hinata-sp",
+  "name": "Shōyō Hinata",
+  "name_kanji": "日向翔陽",
+  "rarity": "sp",
+  "id_school": "karasuno",
+  "position": "mb",
+  "image_card": "images/characters/cards/hinata-sp-card.png",
+  "image_profile": "images/characters/profiles/hinata-sp-profile.png",
+  
+  "specialties": [
+    "atq-rapido",
+    "recepcion"
+  ],
+  
+  "stats": {
+    "colocacion": 0,
+    "saque": 0,
+    "recuperacion": 0,
+    "bloqueo": 0,
+    "recepcion": 0,
+    "ataque_rapido": 0,
+    "ataque_poderoso": 0
+  },
+  
+  "abilities": [
+    {
+      "id": "hinata-sp-h1",
+      "name_es": "",
+      "type": "passive",
+      "tags": ["Pasiva"],
+      "icon": "images/abilities/hinata-sp/hinata-sp-ability-1.png",
+      "max_level": 3,
+      "descriptions": {
+        "1": "",
+        "2": "",
+        "3": ""
+      }
+    },
+    {
+      "id": "hinata-sp-h2",
+      "name_es": "",
+      "type": "passive",
+      "tags": ["Pasiva"],
+      "icon": "images/abilities/hinata-sp/hinata-sp-ability-2.png",
+      "max_level": 3,
+      "descriptions": {
+        "1": "",
+        "2": "",
+        "3": ""
+      }
+    },
+    {
+      "id": "hinata-sp-h3",
+      "name_es": "",
+      "type": "passive",
+      "tags": ["Pasiva"],
+      "icon": "images/abilities/hinata-sp/hinata-sp-ability-3.png",
+      "max_level": 3,
+      "descriptions": {
+        "1": "",
+        "2": "",
+        "3": ""
+      }
+    },
+    {
+      "id": "hinata-sp-h4",
+      "name_es": "",
+      "type": "ultimate",
+      "tags": ["Definitiva"],
+      "icon": "images/abilities/hinata-sp/hinta-sp-ability-4.png",
+      "max_level": 5,
+      "descriptions": {
+        "1": "",
+        "2": "",
+        "3": "",
+        "4": "",
+        "5": ""
+      }
+    }
+  ],
+  
+  "memory": {
+    "name": "",
+    "image": "images/memories/hinata-sp-memory.png",
+    "level": 80,
+    "stats_boost": {
+      "colocacion": 0,
+      "saque": 0,
+      "recuperacion": 0,
+      "bloqueo": 0,
+      "recepcion": 0,
+      "remate": 0
+    },
+    "exclusive_effects": {
+      "I": "",
+      "II": "",
+      "III": "",
+      "IV": "",
+      "V": ""
+    }
+  },
+  
+  "resonances": {
+    "I": "Aumenta los atributos básicos en un 13%.",
+    "II": "",
+    "III": "Aumenta los atributos básicos en un 13%.",
+    "IV": "",
+    "V": "Aumenta los atributos básicos en un 13%."
+  },
+  
+  "bonds": [
+    "",
+    ""
+  ]
+}
