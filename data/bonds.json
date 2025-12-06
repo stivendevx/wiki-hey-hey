@@ -71,5 +71,270 @@
       "4":"TORU OIKAWA ejecuta un pase, HAJIME IWAIZUMU ejecuta un Remate poderoso con un poder equivalente al 300% del atributo Poderoso, y tu equipo recibe 2 acumulaciones de la ventaja [Ritmo de Ataque]. Cada Acumulación de la ventaja [Ritmo de Ataque] aumenta la Percepción de los jugadores de tu equipo en un 1%, hasta 10 acumulaciones.",
       "5":"TORU OIKAWA ejecuta un pase, HAJIME IWAIZUMU ejecuta un Remate poderoso con un poder equivalente al 315% del atributo Poderoso, y tu equipo recibe 2 acumulaciones de la ventaja [Ritmo de Ataque]. Cada Acumulación de la ventaja [Ritmo de Ataque] aumenta la Percepción de los jugadores de tu equipo en un 1%, hasta 10 acumulaciones."
     }
+  },
+
+  {
+    "id": "duo-raro",
+    "type": "alineacion",
+    "name": "El Dúo Raro",
+    "image": "images/bonds/duo-raro.png",
+    "icon": "images/bonds/icons/duo-raro.png",
+    "characters": ["tobio-ur", "hinata-ssr"],
+    "effects": {
+      "1":"TOBIO KAGEYAMA levanta el Pase y SHOYO HINATA realiza un Ataque Rápido Extraño con un poder equivalente al 280% del atributo Ataque rápido. <br> En esta jugada, la percepción aumenta en un 30%.<br> Además, la Fuerza aumenta en Percepcion un 30% (Maximo: 60%). <br> Esta jugada es Imbloqueable.<br>Si el efecto 'Competividad' se consume cuando se activa 'El Dúo Raro', TOBIO KAGEYAMA obtiene 1 aculumación del efecto 'Competividad'.",
+      "2":"TOBIO KAGEYAMA levanta el Pase y SHOYO HINATA realiza un Ataque Rápido Extraño con un poder equivalente al 295% del atributo Ataque rápido. <br> En esta jugada, la percepción aumenta en un 30%.<br> Además, la Fuerza aumenta en Percepcion un 35% (Maximo: 70%). <br> Esta jugada es Imbloqueable.<br>Si el efecto 'Competividad' se consume cuando se activa 'El Dúo Raro', TOBIO KAGEYAMA obtiene 1 aculumación del efecto 'Competividad'.",
+      "3":"TOBIO KAGEYAMA levanta el Pase y SHOYO HINATA realiza un Ataque Rápido Extraño con un poder equivalente al 310% del atributo Ataque rápido. <br> En esta jugada, la percepción aumenta en un 30%.<br> Además, la Fuerza aumenta en Percepcion un 40% (Maximo: 80%). <br> Esta jugada es Imbloqueable.<br>Si el efecto 'Competividad' se consume cuando se activa 'El Dúo Raro', TOBIO KAGEYAMA obtiene 1 aculumación del efecto 'Competividad'.",
+      "4":"TOBIO KAGEYAMA levanta el Pase y SHOYO HINATA realiza un Ataque Rápido Extraño con un poder equivalente al 325% del atributo Ataque rápido. <br> En esta jugada, la percepción aumenta en un 30%.<br> Además, la Fuerza aumenta en Percepcion un 45% (Maximo: 90%). <br> Esta jugada es Imbloqueable.<br>Si el efecto 'Competividad' se consume cuando se activa 'El Dúo Raro', TOBIO KAGEYAMA obtiene 1 aculumación del efecto 'Competividad'.",
+      "5":"TOBIO KAGEYAMA levanta el Pase y SHOYO HINATA realiza un Ataque Rápido Extraño con un poder equivalente al 340% del atributo Ataque rápido. <br> En esta jugada, la percepción aumenta en un 30%.<br> Además, la Fuerza aumenta en Percepcion un 50% (Maximo: 100%).<br> Esta jugada es Imbloqueable.<br>Si el efecto 'Competividad' se consume cuando se activa 'El Dúo Raro', TOBIO KAGEYAMA obtiene 1 aculumación del efecto 'Competividad'."
+    }
+  },
+
+  {
+    "id": "rey-gran-rey",
+    "type": "bonus",
+    "name": "'Rey' y 'Gran Rey'",
+    "image": "images/bonds/rey-gran-rey.png",
+    "characters": ["tobio-ur", "oikawa-ur"],
+    "bonuses": {
+      "tobio-ur": {
+        "1": "Saque +5, Saque +1%",
+        "2": "Saque +7, Saque +2%",
+        "3": "Saque +9, Saque +3%",
+        "4": "Saque +12, Saque +4%",
+        "5": "Saque +15, Saque +5%"
+      },
+      "oikawa-ur": {
+        "1": "Saque +5, Saque +1%",
+        "2": "Saque +7, Saque +2%",
+        "3": "Saque +9, Saque +3%",
+        "4": "Saque +12, Saque +4%",
+        "5": "Saque +15, Saque +5%"
+      }
+    }
+  },
+
+  {
+    "id": "armadores-karasuno",
+    "type": "bonus",
+    "name": "Armadores De Karasuno",
+    "image": "images/bonds/armadores-karasuno.png",
+    "characters": ["tobio-ur", "sugawara-sr"],
+    "bonuses": {
+      "tobio-ur": {
+        "1": "Colocación +5, Colocación +1%",
+        "2": "Colocación +7, Colocación +2%",
+        "3": "Colocación +9, Colocación +3%",
+        "4": "Colocación +12, Colocación +4%",
+        "5": "Colocación +15, Colocación +5%"
+      },
+      "sugawara-sr": {
+        "1": "Colocación +5, Colocación +1%",
+        "2": "Colocación +7, Colocación +2%",
+        "3": "Colocación +9, Colocación +3%",
+        "4": "Colocación +12, Colocación +4%",
+        "5": "Colocación +15, Colocación +5%"
+      }
+    }
+  },
+
+  {
+    "id": "reprobados-karasuno",
+    "type": "bonus",
+    "name": "Grupo de los Reprobados de Karasuno",
+    "image": "images/bonds/reprobados-karasuno.png",
+    "characters": ["hinata-ssr", "tobio-ur", "nishinoya-ssr", "tanaka"],
+    "bonuses": {
+      "tanaka-ssr": {
+        "1": "Ataque Poderoso +5, Ataque Poderoso +1%",
+        "2": "Ataque Poderoso +7, Ataque Poderoso +2%",
+        "3": "Ataque Poderoso +9, Ataque Poderoso +3%",
+        "4": "Ataque Poderoso +12, Ataque Poderoso +4%",
+        "5": "Ataque Poderoso +15, Ataque Poderoso +5%"
+      }
+    }
+  },
+
+  {
+    "id": "armadores-campamento",
+    "type": "bonus",
+    "name": "Armadores del Campamento Juvenil",
+    "image": "images/bonds/armadores-campamento.png",
+    "characters": ["atsumu-ur", "tobio-ur"],
+    "bonuses": {
+      "atsumu-ur": {
+        "1": "Colocación +5, Colocación +1%",
+        "2": "Colocación +7, Colocación +2%",
+        "3": "Colocación +9, Colocación +3%",
+        "4": "Colocación +12, Colocación +4%",
+        "5": "Colocación +15, Colocación +5%"
+      },
+      "tobio-ur": {
+        "1": "Colocación +5, Colocación +1%",
+        "2": "Colocación +7, Colocación +2%",
+        "3": "Colocación +9, Colocación +3%",
+        "4": "Colocación +12, Colocación +4%",
+        "5": "Colocación +15, Colocación +5%"
+      }
+    }
+  },
+
+  {
+    "id": "duo-raro2",
+    "type": "alineacion",
+    "name": "El Dúo Raro",
+    "image": "images/bonds/duo-raro2.png",
+    "icon": "images/bonds/icons/duo-raro2.png",
+    "characters": ["hinata-sp", "tobio-ur"],
+    "effects": {
+      "1":"Cuando un miembro aliado activa su habilidad de Recepción, consume 1 acumulacióndel efecto 'Competitividad' y aumenta el Reflejo del miembro que realiza la recepción en un 6%. Si SHOYO HINATA (HANAMI) consume el efecto 'Competitividad' al activar su habilidad de Recepción, su Reflejo aumentan adicionalmente en un 9%, y TOBIO KAGEYAMA obtiene 1 acumulación del efecto 'Competitividad'. <br>Cuando SHOYO HINATA (HANAMI) activa su habilidad definitiva, TOBIO KAGEYAMA obtiene 1 acumulación del efecto 'Competitividad'.",
+      "2":"",
+      "3":"",
+      "4":"",
+      "5":""
+    }
+  },
+
+  {
+    "id": "reprobados-karasuno2",
+    "type": "bonus",
+    "name": "Grupo de los Reprobados de Karasuno",
+    "image": "images/bonds/reprobados-karasuno2.png",
+    "characters": ["hinata-sp", "nishinoya-sp", "tobio-ur", "tanaka-ssr"],
+    "bonuses": {
+      "hinata-sp": {
+        "1": "Recepción +5, Recepción +1%",
+        "2": "Recepción +7, Recepción +2%",
+        "3": "Recepción +9, Recepción +3%",
+        "4": "Recepción +12, Recepción +4%",
+        "5": "Recepción +15, Recepción +5%"
+      },
+      "nishinoya-sp": {
+        "1": "Colocación +5, Colocación +1%",
+        "2": "Colocación +7, Colocación +2%",
+        "3": "Colocación +9, Colocación +3%",
+        "4": "Colocación +12, Colocación +4%",
+        "5": "Colocación +15, Colocación +5%"
+      }
+    }
+  },
+
+  {
+    "id": "armadores-karasuno2",
+    "type": "bonus",
+    "name": "Armadores De Karasuno",
+    "image": "images/bonds/armadores-karasuno2.png",
+    "characters": ["tobio-ur", "sugawara-sp"],
+    "bonuses": {
+      "sugawara-sp": {
+        "1": "Colocación +5, Colocación +1%",
+        "2": "Colocación +7, Colocación +2%",
+        "3": "Colocación +9, Colocación +3%",
+        "4": "Colocación +12, Colocación +4%",
+        "5": "Colocación +15, Colocación +5%"
+      }
+    }
+  },
+
+  {
+    "id": "genios-karasuno",
+    "type": "alineacion",
+    "name": "Genios de Karasuno",
+    "image": "images/bonds/genios-karasuno.png",
+    "icon": "images/bonds/icons/genios-karasuno.png",
+    "characters": ["tobio-ur", "nishinoya-sp"],
+    "effects": {
+      "1":"La Recepción y el Reflejos de YU NISHINOYA (Después de Clase) aumentan en un 5%.<br> Cuando YU NISHINOYA (Después de Clase) activa su habilidad definitiva, TOBIO KAGEYAMA adquiere 1 acumulación del efecto 'Competitividad'. <br>Si esta habilidad definitiva resulta ser crítica, la potencia del primer remate (poderoso/rápido) de un aliado después de esta jugada, aumenta en un 20% de la estadística Ataque Poderoso/Rápido del miembro que realiza el remate.",
+      "2":"",
+      "3":"",
+      "4":"",
+      "5":""
+    }
+  },
+
+  {
+    "id": "rey-gran-rey2",
+    "type": "alineacion",
+    "name": "'El Rey' y 'El Gran Rey'",
+    "image": "images/bonds/rey-gran-rey2.png",
+    "icon": "images/bonds/icons/rey-gran-rey2.png",
+    "characters": ["tobio-ur"],
+    "effects": {
+      "1":"TOBIO KAGEYAMA y TORU OIKAWA (Festival Escolar) compiten por la posesión del saque, y el primero en activar una habilidad de saque resulta ganador.<br> Si TORU OIKAWA (Festival Escolar) gana, TOBIO KAGEYAMA obtiene el efecto 'Despliegue'; este efecto dura un set. <br><br>Si TOBIO KAGEYAMA gana:<br>Cada vez que TORU OIKAWA (Festival Escolar) toca el balón, TOBIO KAGEYAMA obtiene 1 acumulación del efecto 'Competitividad]'.<br>Cuando TORU OIKAWA (Festival Escolar) activa una habilidad, TOBIO KAGEYAMA obtiene 1 acumulación adicional del efecto 'Competitividad'.",
+      "2":"",
+      "3":"",
+      "4":"",
+      "5":""
+    }
+  },
+
+  {
+    "id": "campeon-vs-duo2",
+    "type": "bonus",
+    "name": "'El Campeón Absoluto' Vs El Dúo Raro",
+    "image": "images/bonds/campeon-vs-duo2.png",
+    "characters": ["hinata-sp", "tobio-ur", "ushijima-sp"],
+    "bonuses": {
+      "hinata-sp": {
+        "1": "Ataque Rápido +5, Ataque Rápido +1%",
+        "2": "Ataque Rápido +7, Ataque Rápido +2%",
+        "3": "Ataque Rápido +9, Ataque Rápido +3%",
+        "4": "Ataque Rápido +12, Ataque Rápido +4%",
+        "5": "Ataque Rápido +15, Ataque Rápido +5%"
+      },
+      "ushijima-sp": {
+        "1": "Saque +5, Saque +1%",
+        "2": "Saque +7, Saque +2%",
+        "3": "Saque +9, Saque +3%",
+        "4": "Saque +12, Saque",
+        "5": "Saque +15, Saque +5%"
+      },
+      "tobio-ur": {
+        "1": "Colocación +5, Colocación +1%",
+        "2": "Colocación +7, Colocación +2%",
+        "3": "Colocación +9, Colocación +3%",
+        "4": "Colocación +12, Colocación +4%",
+        "5": "Colocación +15, Colocación +5%"
+      }
+    }
+  },
+
+  {
+    "id": "",
+    "type": "bonus",
+    "name": "",
+    "image": "",
+    "characters": [""],
+    "bonuses": {
+      "personaje": {
+        "1": "",
+        "2": "",
+        "3": "",
+        "4": "",
+        "5": ""
+      },
+      "personaje2": {
+        "1": "",
+        "2": "",
+        "3": "",
+        "4": "",
+        "5": ""
+      }
+    }
+  },
+
+  {
+    "id": "",
+    "type": "alineacion",
+    "name": "",
+    "image": "",
+    "icon": "",
+    "characters": [""],
+    "effects": {
+      "1":"",
+      "2":"",
+      "3":"",
+      "4":"",
+      "5":""
+    }
   }
 ]

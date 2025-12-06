@@ -1,0 +1,116 @@
+{
+  "id": "ushijima-sp",
+  "name": "Wakatoshi Ushijima",
+  "name_kanji": "Festival Cultural",
+  "rarity": "sp",
+  "id_school": "shiratorizawa",
+  "position": "op",
+  "image_card": "images/characters/cards/ushijima-sp-card.png",
+  "image_profile": "images/characters/profiles/ushujima-sp-profile.png",
+  
+  "specialties": [
+    "saque",
+    "atq-poderoso"
+  ],
+  
+  "stats": {
+    "colocacion": 1748,
+    "saque": 1854,
+    "recuperacion": 1482,
+    "bloqueo": 1759,
+    "recepcion": 1573,
+    "ataque_rapido": 272,
+    "ataque_poderoso": 1968
+  },
+  
+  "abilities": [
+    {
+      "id": "ushijima-sp-h1",
+      "name_es": "PODER DEL CAMPEÓN",
+      "type": "passive",
+      "tags": ["Pasiva"],
+      "icon": "images/abilities/ushijima-sp/ushijima-sp-ability-1.png",
+      "max_level": 3,
+      "descriptions": {
+        "1": "Cuando WAKATOSHI USHIJIMA (FESTIVAL CULTURAL) obtiene una Desventaja, su Ataque Poderoso y Saque aumentan un 2%. Máximo 6 acumulaciones. Si Ushijima está en la cancha, cuando la Colocacion de un aliado resulta en una Jugada Crítica, la Percepción de Ushijima aumenta un 8%. Máximo 99 acumulaciones.",
+        "2": "Cuando WAKATOSHI USHIJIMA (FESTIVAL CULTURAL) obtiene una Desventaja, su Ataque Poderoso y Saque aumentan 2.5%. Máximo 6 acumulaciones. Si Ushijima está en la cancha, cuando la Colocacion de un aliado resulta en una Jugada Crítica, la Percepción de Ushijima aumenta un 8%. Máximo 99 acumulaciones.",
+        "3": "Cuando WAKATOSHI USHIJIMA (FESTIVAL CULTURAL) obtiene una Desventaja, su Ataque Poderoso y Saque aumentan 3%. Máximo 6 acumulaciones. Si Ushijima está en la cancha, cuando la Colocacion de un aliado resulta en una Jugada Crítica, la Percepción de Ushijima aumenta un 8%. Máximo 99 acumulaciones."
+      }
+    },
+    {
+      "id": "ushijima-sp-h2",
+      "name_es": "SAQUE CON UN PODER DESTRUCTIVO",
+      "type": "passive",
+      "tags": ["Pasiva"],
+      "icon": "images/abilities/hinata-sp/hinata-sp-ability-2.png",
+      "max_level": 3,
+      "descriptions": {
+        "1": "WAKATOSHI USHIJIMA (FESTIVAL CULTURAL) ejecuta un Saque con Salto con un Poder equivalente al 140% del atributo Saque. El poder de Recepción del rival se reduce un 100% del atributo Recepción. Este efecto persiste hasta que el balón cruce la red 2 veces.",
+        "2": "WAKATOSHI USHIJIMA (FESTIVAL CULTURAL) ejecuta un Saque con Salto con un Poder equivalente al 160% del atributo Saque. El poder de Recepción del rival se reduce un 100% del atributo Recepción. Este efecto persiste hasta que el balón cruce la red 2 veces.",
+        "3": "WAKATOSHI USHIJIMA (FESTIVAL CULTURAL) ejecuta un Saque con Salto con un Poder equivalente al 180% del atributo Saque. El poder de Recepción del rival se reduce un 100% del atributo Recepción. Este efecto persiste hasta que el balón cruce la red 2 veces."
+      }
+    },
+    {
+      "id": "ushijima-sp-h3",
+      "name_es": "APLASTAR",
+      "type": "passive",
+      "tags": ["Pasiva"],
+      "icon": "images/abilities/hinata-sp/hinata-sp-ability-3.png",
+      "max_level": 3,
+      "descriptions": {
+        "1": "La Percepción de WAKATOSHI UJSHIJIMA (FESTIVAL CULTURAL) se duplica. <hr> Si la Percepción de USHIJIMA es 200% o Superior, el límite superior de Enfriamiento de 'FUERZA DE CLASE CAÑON'se reduce en 4 cruces de red del balón.<br> Si la Percepción de USHIJIMA es 350% o Superior, el Poder de la primera 'Fuerza de Clase Cañon' en cada Rally aumenta en Ataque Poderoso un 40%.\nSi la [Percepción] de Ushijima es 400% o Superior, cuando la [Percepción] excede el 400%, por cada 1% que exceda, el [Poder] aumenta un 0.7%. Puede aumentar un máximo del 70%.",
+        "2": "",
+        "3": ""
+      }
+    },
+    {
+      "id": "ushijima-sp-h4",
+      "name_es": "",
+      "type": "ultimate",
+      "tags": ["Definitiva"],
+      "icon": "images/abilities/hinata-sp/hinta-sp-ability-4.png",
+      "max_level": 5,
+      "descriptions": {
+        "1": "mi",
+        "2": "",
+        "3": "",
+        "4": "",
+        "5": ""
+      }
+    }
+  ],
+  
+  "memory": {
+    "name": "",
+    "image": "images/memories/hinata-sp-memory.png",
+    "level": 80,
+    "stats_boost": {
+      "colocacion": 0,
+      "saque": 0,
+      "recuperacion": 0,
+      "bloqueo": 0,
+      "recepcion": 0,
+      "remate": 0
+    },
+    "exclusive_effects": {
+      "I": "",
+      "II": "",
+      "III": "",
+      "IV": "",
+      "V": ""
+    }
+  },
+  
+  "resonances": {
+    "I": "Aumenta los atributos básicos en un 13%.",
+    "II": "",
+    "III": "Aumenta los atributos básicos en un 13%.",
+    "IV": "",
+    "V": "Aumenta los atributos básicos en un 13%."
+  },
+  
+  "bonds": [
+    "",
+    ""
+  ]
+}

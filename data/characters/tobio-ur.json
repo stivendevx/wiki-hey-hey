@@ -1,7 +1,7 @@
 {
   "id": "tobio-ur",
   "name": "Tobio Kageyama",
-  "name_kanji": "影山飛雄",
+  "name_kanji": "El Rey de la Cancha",
   "rarity": "ur",
   "id_school": "karasuno",
   "position": "s",
@@ -29,13 +29,13 @@
       "id": "tobio-ur-h1",
       "name_es": "GENIO COLOCADOR",
       "type": "passive",
-      "tags": ["Pasiva", "Colocacción", "Genio Colocador"],
+      "tags": ["Pasiva", "Colocacción", "Mejora Aliada"],
       "icon": "images/abilities/tobio-ur/tobio-ur-ability-1.png",
       "max_level": 3,
       "descriptions": {
-        "1": "KAGEYAMA TOBIO realiza una Colocación con una potencia equivalente al 130% de su atributo Colocación. Durante la colocación de KAGEYAMA TOBIO, el atributo Ataque Rápido del miembro que realiza el remate (Ataque poderoso / rápido) aumenta en un 18% del atributo Colocación de KAGEYAMA TOBIO; este efecto persiste hasta que el balón cruce la red 2 veces.",
-        "2": "KAGEYAMA TOBIO realiza una Colocación con una potencia equivalente al 130% de su atributo Colocación. Durante la colocación de KAGEYAMA TOBIO, el atributo Ataque Rápido del miembro que realiza el remate (Ataque poderoso / rápido) aumenta en un 18% del atributo Colocación de KAGEYAMA TOBIO; este efecto persiste hasta que el balón cruce la red 2 veces.",
-        "3": "KAGEYAMA TOBIO realiza una Colocación con una potencia equivalente al 130% de su atributo Colocación. Durante la colocación de KAGEYAMA TOBIO, el atributo Ataque Rápido del miembro que realiza el remate (Ataque poderoso / rápido) aumenta en un 18% del atributo Colocación de KAGEYAMA TOBIO; este efecto persiste hasta que el balón cruce la red 2 veces."
+        "1": "TOBIO KAGEYAMA ejecuta un pase con un poder equivalente al 130% del Atributo Colocación. <br> Durante el pase de TOBIO KAGEYAMA, el Ataque rápido de los miembros que realizan un Remate poderoso o un ataque rápido aumenta en un 18% del Atributo Colocación de TOBIO KAGEYAMA. <br> Este efecto dura hasta que el balón cruza la red 2 veces.",
+        "2": "TOBIO KAGEYAMA ejecuta un pase con un poder equivalente al 145% del Atributo Colocación. <br> Durante el pase de TOBIO KAGEYAMA, el Ataque rápido de los miembros que realizan un Remate poderoso o un ataque rápido aumenta en un 18% del Atributo Colocación de TOBIO KAGEYAMA. <br> Este efecto dura hasta que el balón cruza la red 2 veces.",
+        "3": "TOBIO KAGEYAMA ejecuta un pase con un poder equivalente al 160% del Atributo Colocación. <br> Durante el pase de TOBIO KAGEYAMA, el Ataque rápido de los miembros que realizan un Remate poderoso o un ataque rápido aumenta en un 18% del Atributo Colocación de TOBIO KAGEYAMA. <br> Este efecto dura hasta que el balón cruza la red 2 veces."
       }
     },
     {
@@ -46,76 +46,72 @@
       "icon": "images/abilities/tobio-ur/tobio-ur-ability-2.png",
       "max_level": 3,
       "descriptions": {
-        "1": "TORU OIKAWA ejecuta una finta de colocador imbloqueable con un poder equivalente al 115% del atributo Pase. Si OIKAWA está presente, aumenta en un 20% la Fuerza de los jugadores de tipo Poder en tu equipo.",
-        "2": "TORU OIKAWA ejecuta una finta de colocador imbloqueable con un poder equivalente al 130% del atributo Pase. Si OIKAWA está presente, aumenta en un 20% la Fuerza de los jugadores de tipo Poder en tu equipo.",
-        "3": "TORU OIKAWA ejecuta una finta de colocador imbloqueable con un poder equivalente al 145% del atributo Pase. Si OIKAWA está presente, aumenta en un 20% la Fuerza de los jugadores de tipo Poder en tu equipo."
+        "1": "TOBIO KAGEYAMA ejecuta un Saque con Salto Potente con un poder equivalente al 130% del atributo Saque. <br> Si este saque resulta ser Crítico, la Técnica Ofensiva de los jugadores de tu equipo aumentará en un 10%. <br> Este efecto dura hasta que el balon cruza la red 6 veces.",
+        "2": "TOBIO KAGEYAMA ejecuta un Saque con Salto Potente con un poder equivalente al 145% del atributo Saque. <br> Si este saque resulta ser Crítico, la Técnica Ofensiva de los jugadores de tu equipo aumentará en un 10%. <br> Este efecto dura hasta que el balon cruza la red 6 veces.",
+        "3": "TOBIO KAGEYAMA ejecuta un Saque con Salto Potente con un poder equivalente al 160% del atributo Saque. <br> Si este saque resulta ser Crítico, la Técnica Ofensiva de los jugadores de tu equipo aumentará en un 10%. <br> Este efecto dura hasta que el balon cruza la red 6 veces."
       }
     },
     {
-      "id": "oikawa-ur-h3",
-      "name": "LÍDER DE LA CANCHA",
-      "name_es": "LÍDER DE LA CANCHA",
+      "id": "tobio-ur-h3",
+      "name_es": "REY SILENCIOSO",
       "type": "passive",
-      "tags": ["Pasiva", "Aumento de Percepción"],
+      "tags": ["Pasiva", "Mejora Ataque Rápido"],
       "icon": "images/abilities/tobio-ur/tobio-ur-ability-3.png",
       "max_level": 3,
       "descriptions": {
-        "1": "si TORU OIKAWA está presente, aumenta la Percepción de los jugadores de tu equipo en un 10%. Cuando un jugador de tu equipo use la habilidad Remate poderoso, usará 6 acumulaciones de la ventaja [Ritmo de Ataque] para garantizar que este remate sea crítico.",
-        "2": "si TORU OIKAWA está presente, aumenta la Percepción de los jugadores de tu equipo en un 14%. Cuando un jugador de tu equipo use la habilidad Remate poderoso, usará 6 acumulaciones de la ventaja [Ritmo de Ataque] para garantizar que este remate sea crítico.",
-        "3": "si TORU OIKAWA está presente, aumenta la Percepción de los jugadores de tu equipo en un 18%. Cuando un jugador de tu equipo use la habilidad Remate poderoso, usará 6 acumulaciones de la ventaja [Ritmo de Ataque] para garantizar que este remate sea crítico."
+        "1": "La Tecnica ofensiva de TOBIO KAGEYAMA aumenta en 14%. <br>Si TOBIO KAGEYAMA está presente en la cancha y el saque, la Finta de Colocador o el remate (Ataque Poderoso / ataque rápido) del oponente resulta ser una Jugada Crítica, TOBIO KAGEYAMA obtendrá 1 acumulación del efecto 'Competitividad'. Máximo 5 acumulaciones <br>Cuando TOBIO KAGEYAMA está en la cancha y un jugador de tu equipo realiza un Saque, una Finta de Colocador o un Remate, consume 1 acumulación del efecto 'Competividad' y aumenta la Percepción en un 20% y la Fuerza en un 15% para el miembro que realiza la acción; Este efecto dura 2 cruces de red. <br> Al comiezo del Rally, TOBIO KAGEYAMA adquiere 1 aumulación del efecto 'Competividad'.",
+        "2": "La Tecnica ofensiva de TOBIO KAGEYAMA aumenta en %.<br>Si TOBIO KAGEYAMA está presente en la cancha y el saque, la Finta de Colocador o el remate (Ataque Poderoso / ataque rápido) del oponente resulta ser una Jugada Crítica, TOBIO KAGEYAMA obtendrá 1 acumulación del efecto 'Competitividad'. Máximo 5 acumulaciones <br>Cuando TOBIO KAGEYAMA está en la cancha y un jugador de tu equipo realiza un Saque, una Finta de Colocador o un Remate, consume 1 acumulación del efecto 'Competividad' y aumenta la Percepción en un % y la Fuerza en un 15% para el miembro que realiza la acción; Este efecto dura 2 cruces de red. <br> Al comiezo del Rally, TOBIO KAGEYAMA adquiere 1 aumulación del efecto 'Competividad'.",
+        "3": "La Tecnica ofensiva de TOBIO KAGEYAMA aumenta en %.<br>Si TOBIO KAGEYAMA está presente en la cancha y el saque, la Finta de Colocador o el remate (Ataque Poderoso / ataque rápido) del oponente resulta ser una Jugada Crítica, TOBIO KAGEYAMA obtendrá 1 acumulación del efecto 'Competitividad'. Máximo 5 acumulaciones <br>Cuando TOBIO KAGEYAMA está en la cancha y un jugador de tu equipo realiza un Saque, una Finta de Colocador o un Remate, consume 1 acumulación del efecto 'Competividad' y aumenta la Percepción en un % y la Fuerza en un 15% para el miembro que realiza la acción; Este efecto dura 2 cruces de red. <br> Al comiezo del Rally, TOBIO KAGEYAMA adquiere 1 aumulación del efecto 'Competividad'."
       }
     },
     {
-      "id": "oikawa-ur-h4",
-      "name": "SAQUE CON SALTO DEL GRAN REY",
-      "name_es": "SAQUE CON SALTO DEL GRAN REY",
+      "id": "tobio-ur-h4",
+      "name_es": "DOMINA EL PARTIDO",
       "type": "ultimate",
-      "tags": ["Definitiva", "Pasiva", "Saque", "Bonificación de atributo"],
+      "tags": ["Definitiva", "Activa", "Finta de Colocador", "Ignora Bloqueo"],
       "icon": "images/abilities/tobio-ur/tobio-ur-ability-4.png",
       "max_level": 5,
       "descriptions": {
-        "1": "TORU OIKAWA ejecuta un Saque con Salto Poderoso con un poder equivalente al 260% del atributo Saque. Para este saque, OIKAWA aumenta en un 20% su atributo Percepción y en un 20% su atributo Fuerza.",
-        "2": "TORU OIKAWA ejecuta un Saque con Salto Poderoso con un poder equivalente al 275% del atributo Saque. Para este saque, OIKAWA aumenta en un 20% su atributo Percepción y en un 20% su atributo Fuerza.",
-        "3": "TORU OIKAWA ejecuta un Saque con Salto Poderoso con un poder equivalente al 290% del atributo Saque. Para este saque, OIKAWA aumenta en un 20% su atributo Percepción y en un 20% su atributo Fuerza.",
-        "4": "TORU OIKAWA ejecuta un Saque con Salto Poderoso con un poder equivalente al 305% del atributo Saque. Para este saque, OIKAWA aumenta en un 20% su atributo Percepción y en un 20% su atributo Fuerza.",
-        "5": "TORU OIKAWA ejecuta un Saque con Salto Poderoso con un poder equivalente al 320% del atributo Saque. Para este saque, OIKAWA aumenta en un 20% su atributo Percepción y en un 20% su atributo Fuerza."
+        "1": "TOBIO KAGEYAMA ejecuta una finta de colocador imbloqueable con un poder equivalente al 240% del atributo Colocación. <br> Las habilidades de bloqueo de la línea delantera rival extienden su Enfriamiento en 4 cruces de red.",
+        "2": "TOBIO KAGEYAMA ejecuta una finta de colocador imbloqueable con un poder equivalente al 255% del atributo Colocación. <br> Las habilidades de bloqueo de la línea delantera rival extienden su Enfriamiento en 4 cruces de red.",
+        "3": "TOBIO KAGEYAMA ejecuta una finta de colocador imbloqueable con un poder equivalente al 270% del atributo Colocación. <br> Las habilidades de bloqueo de la línea delantera rival extienden su Enfriamiento en 4 cruces de red.",
+        "4": "TOBIO KAGEYAMA ejecuta una finta de colocador imbloqueable con un poder equivalente al 285% del atributo Colocación. <br> Las habilidades de bloqueo de la línea delantera rival extienden su Enfriamiento en 4 cruces de red.",
+        "5": "TOBIO KAGEYAMA ejecuta una finta de colocador imbloqueable con un poder equivalente al 300% del atributo Colocación. <br> Las habilidades de bloqueo de la línea delantera rival extienden su Enfriamiento en 4 cruces de red."
       }
     }
   ],
   
   "memory": {
-    "name": "Potenciación de Saque: TORU OIKAWA",
-    "image": "images/memories/oikawa-ur-memory.png",
+    "name": "Mejora de Pase y Finta de Colocador: TOBIO KAGEYAMA",
+    "image": "images/memories/tobio-ur-memory.png",
     "level": 80,
     "stats_boost": {
-      "colocacion": 729,
-      "saque": 729,
-      "recuperacion": 507,
-      "bloqueo": 665,
-      "recepcion": 539,
-      "remate": 570
+      "colocacion": 0,
+      "saque": 0,
+      "recuperacion": 0,
+      "bloqueo": 0,
+      "recepcion": 0,
+      "remate": 0
     },
     "exclusive_effects": {
-      "I": "Aumenta el atributo Saque del portador en un 12%. Cuando el portador ejecuta un saque crítico, obtiene 2 acumulación(es) de 'Ritmo de Ataque'. Cada Acumulación aumenta la Percepcion de los jugadores de tu equipo en un 1%; se acumula hasta 10 veces. Si el saque marca, el portador obtiene 4 acumulación(es) más de 'Ritmo de Ataque'. Mientras el portador está en la cancha, cuando 'Ritmo de Ataque' de tu equipo alcanza 6 acumulaciones, los atributos Fuerza y Espíritu de tus jugadores aumentan en un 2%; se acumula hasta 3 veces.",
+      "I": "Aumenta el atributo Colocación del portador en un 12%.<br>Cuando el portador ejecuta la habilidad Finta de Colocador, su Fuerza aumenta en Percepción por 20%; Se acumula hasta 100% veces.<br>Tras que el portador ejecute la habilidad Finta de Colocador, la potencia del siguiente remate (Remate poderoso/ataque rápido) de un aliado aumenta en un 14% de la estadística Ataque Poderoso/Ataque Rápido del miembro que realiza el remate.",
       "II": "Sin información del grado II de este recuerdo.",
       "III": "Sin Información del grado III de este recuerdo.",
       "IV": "Sin Información del grado IV de este Recuerdo.",
-      "V": "Aumenta el atributo Saque del portador en un 24%. Cuando el portador ejecuta un saque crítico, obtiene 2 acumulación(es) de 'Ritmo de Ataque'. Cada Acumulación aumenta la Percepcion de los jugadores de tu equipo en un 4%; se acumula hasta 10 veces. Si el saque marca, el portador obtiene 4 acumulación(es) más de 'Ritmo de Ataque'. Mientras el portador está en la cancha, cuando 'Ritmo de Ataque' de tu equipo alcanza 6 acumulaciones, los atributos Fuerza y Espíritu de tus jugadores aumentan en un 2%; se acumula hasta 3 veces."
+      "V": "Sin Información del grado V de este Recuerdo."
     }
   },
   
   "resonances": {
     "I": "Aumenta los atributos básicos en un 13%.",
-    "II": "El atributo Saque de TORU OIKAWA aumenta un 18%. Cuando se consume 'Ritmo de Ataque', el atributo Ataque poderoso de tus jugadores aumenta un 5% por acumulación, hasta un máximo de 5 acumulaciones.",
+    "II": "La Fuerza de TOBIO KAGEYAMA aumenta en un 20%.<hr>Al consumir el efecto 'Competitividad', la Percepción de los miembros que realizan saques, Fintas de Colocador y remates aumentará en un 15% adicional. Este efecto dura hasta que el balón cruza la red 2 veces.<hr>Si la jugada de TOBIO KAGEYAMA consume el efecto 'Competitividad', obtendrá 1 acumulación del efecto 'Competitividad' y el poder de la jugada actual aumentará en el parámetro correspondiente x 15%. Además, la Percepción aumenta en un 20%. Este efecto dura hasta que el balón cruza la red 2 veces. <hr> La Técnica ofensiva de los miembros que tienen 3 o más acumulaciones del efecto 'Competitividad' y realizan saques, Fintas de Colocador y remates aumenta en un 10%. Este efecto dura hasta que el balón cruza la red 2 veces.",
     "III": "Aumenta los atributos básicos en un 13%.",
-    "IV": "Cuando saca TORU OIKAWA, aumenta la Percepción en un 15%, para los jugadores de tu equipo; esto dura 3 cruces de red. Si tu equipo anota antes de los 2 cruces de red después del saque de TORU OIKAWA, se restablece la recarga de SAQUE CON SALTO DEL GRAN REY.",
+    "IV": "El Atributo Colocación de TOBIO KAGEYAMA aumenta en un 15%.<hr>Cuando TOBIO KAGEYAMA está en la cancha y un jugador de tu equipo realiza un ataque rápido o una Finta de Colocador, la Fuerza del miembro que realiza la jugada correspondiente aumenta en un 6% por cada 500 del Atributo Colocación de TOBIO KAGEYAMA. Máximo un 60%.<hr>Cuando se activa la habilidad de TOBIO KAGEYAMA, el Enfriamiento de sus otras habilidades se reduce en el número de cruces de red del balón.",
     "V": "Aumenta los atributos básicos en un 13%."
   },
   
   "bonds": [
-    "eternos-rivales",
-    "poder-confianza",
-    "quimica-perfecta",
-    "mas-alto"
+    "duo-raro",
+    "rey-gran-rey"
   ]
 }

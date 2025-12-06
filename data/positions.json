@@ -6,12 +6,12 @@
   },
   {
     "id": "ws",
-    "name": "Atacante Exterior",
+    "name": "Rematador Lateral",
     "icon": "images/icons/positions/wing-spiker.png"
   },
   {
     "id": "op",
-    "name": "Opuesto",
+    "name": "Rematador Opuesto",
     "icon": "images/icons/positions/opposite.png"
   },
   {
